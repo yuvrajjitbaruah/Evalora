@@ -1,371 +1,317 @@
+<div align="center">
+
+<img src="recruiter/static/recruiter/assets/evalora-logo-transparent.png" alt="Evalora Logo" width="320" />
+
 # Evalora
 
-<p align="center">
-  <img src="recruiter/static/recruiter/assets/evalora-logo-transparent.png" alt="Evalora" width="340" />
-</p>
+### Intelligence Behind Every Hire
 
-<p align="center">
-  <strong>Intelligence Behind Every Hire</strong>
-</p>
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-5.x-0C4B33?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-ready-FF2F67?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev)
+[![Sarvam](https://img.shields.io/badge/Sarvam_30B-ready-1D97BA?style=flat-square)](https://sarvam.ai)
+[![GitHub Stars](https://img.shields.io/github/stars/yuvrajjitbaruah/Evalora?style=flat-square&color=yellow)](https://github.com/yuvrajjitbaruah/Evalora/stargazers)
 
-<p align="center">
-  <a href="https://github.com/yuvrajjitbaruah/Evalora"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-Evalora-111827?style=for-the-badge&logo=github" /></a>
-  <img alt="Django" src="https://img.shields.io/badge/Django-5.x-0C4B33?style=for-the-badge&logo=django" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img alt="Gemini" src="https://img.shields.io/badge/Gemini-ready-FF2F67?style=for-the-badge" />
-  <img alt="Sarvam" src="https://img.shields.io/badge/Sarvam-ready-1D97BA?style=for-the-badge" />
-</p>
+[Report a Bug](https://github.com/yuvrajjitbaruah/Evalora/issues) · [Request a Feature](https://github.com/yuvrajjitbaruah/Evalora/issues)
 
-Evalora is a recruiter-grade candidate ranking and ATS intelligence platform built for the **India Runs Data and AI Challenge - Track 1 Candidate Discovery**. It ranks candidates for the released Senior AI Engineer founding-team role using career evidence, semantic fit, behavioral readiness, logistics, and risk controls instead of shallow keyword matching.
+</div>
 
-Built by **Yuvrajjit Baruah** using Python, Django, JavaScript, deterministic hybrid ranking, Gemini, Sarvam, ATS intelligence, and careful UI craft.
+---
 
-## Preview
+## Overview
 
-![Evalora dashboard preview](docs/screenshots/evalora-dashboard.png)
+**Evalora** is a recruiter-grade AI candidate ranking and ATS intelligence platform. Instead of shallow keyword matching, Evalora scores candidates across five dimensions — career evidence, semantic fit, behavioral readiness, logistics, and risk signals — delivering a trusted, deterministic shortlist your team can act on.
 
-## What Evalora Does
+Built with Python, Django, a deterministic hybrid ranking engine (Node.js), and optional AI augmentation via Google Gemini and Sarvam AI.
 
-- Reads a job description and converts it into recruiter-facing evidence requirements.
-- Scores candidates using a deterministic hybrid ranker across skills, career history, behavior, logistics, and risk signals.
-- Produces a trusted top-100 shortlist in the required CSV format.
-- Gives recruiters a polished dashboard for shortlist review, candidate comparison, saved decisions, and workflow tracking.
-- Provides an ATS Analyzer for resume/CV review against the target role.
-- Provides an AI Copilot for recruiter briefs, interview kits, risk audits, outreach drafts, scorecards, and calibration notes.
-- Uses Gemini and Sarvam when API keys are configured, with deterministic local fallback when cloud AI is unavailable.
+> **Stack:** Python · Django · JavaScript · Node.js · Gemini 2.5 Flash · Sarvam 30B
 
-## Repository Structure
+---
 
-```text
+## Screenshot
+
+![Evalora Dashboard](docs/screenshots/evalora-dashboard.png)
+
+---
+
+## Features
+
+| Area | What it does |
+|---|---|
+| **Ranking Engine** | Streams the full candidate pool and ranks deterministically — no per-candidate hosted model calls |
+| **Shortlist Console** | Search, filters, table/card views, fit tags, risk notes, comparison mode, and decision workflow |
+| **ATS Analyzer** | Reviews pasted resume text or uploaded `.txt`, `.docx`, and `.pdf` files against the target role |
+| **AI Copilot** | Generates recruiter briefs, interview kits, scorecards, risk audits, outreach drafts, and Boolean queries |
+| **AI Provider Routing** | Auto-routes to Gemini or Sarvam when configured; falls back to deterministic local result gracefully |
+| **Secure by Default** | `.env.local`, databases, virtualenvs, and raw datasets are excluded from version control |
+
+---
+
+## Tech Stack
+Frontend   →  HTML · CSS · Vanilla JS
+Backend    →  Python 3.12 · Django 5.x
+Ranker     →  Node.js 20 (built-in APIs, zero dependencies)
+AI Layer   →  Google Gemini 2.5 Flash · Sarvam 30B · Local deterministic fallback
+Storage    →  SQLite (dev) · Production DB ready
+Config     →  .env.local (never committed)
+
+---
+
+## Project Structure
 Evalora/
-  evalora_project/                 Django project settings and URL root
-  recruiter/                       Django app, API views, AI services, templates, static UI
-  src/ranker/                      Deterministic Node.js ranking and CSV validation engine
-  public/data/                     Generated public dashboard data
-  public/js/                       Standalone ranking core used by the static preview
-  outputs/                         Submission CSV files
-  docs/                            Methodology, deck export, and README screenshots
-  data/README.md                   Dataset placement instructions
-  manage.py                        Django entry point
-  requirements.txt                 Python dependencies
-  package.json                     Node scripts for ranking and validation
-```
+├── evalora_project/          # Django settings and root URL config
+├── recruiter/                # Main app — views, API, AI services, templates, static UI
+├── src/ranker/               # Deterministic Node.js ranking and CSV validation engine
+├── public/
+│   ├── data/                 # Generated dashboard data (JSON)
+│   └── js/                   # Standalone ranking core for static preview
+├── outputs/                  # Submission CSV files
+├── docs/                     # Methodology notes and screenshots
+├── data/                     # Dataset placement (raw data excluded from repo)
+├── scripts/                  # Utility scripts
+├── manage.py                 # Django entry point
+├── requirements.txt          # Python dependencies
+└── package.json              # Node scripts (rank, validate)
 
-## Feature Map
+---
 
-| Area | Capability |
-| --- | --- |
-| Ranking engine | Streams the candidate pool and ranks candidates deterministically without per-candidate hosted model calls. |
-| Shortlist console | Search, filters, table/card views, component scores, fit tags, risk notes, comparison, and decision workflow. |
-| ATS Analyzer | Reviews pasted resume text or uploaded TXT, DOCX, and readable PDF files against the role. |
-| AI Copilot | Generates recruiter briefs, interview plans, scorecards, risk audits, outreach drafts, Boolean queries, and calibration notes. |
-| AI providers | Auto-routes to Gemini or Sarvam when configured, with safe local fallback. |
-| Submission outputs | Includes `outputs/evalora_submission.csv` and `outputs/evalora_sample_submission.csv`. |
-| Security posture | Keeps `.env.local`, databases, virtualenvs, raw datasets, and local junk out of GitHub. |
+## Getting Started
 
-## Requirements
+### Prerequisites
 
-Install these before running the project:
-
-- Python 3.12 or newer
-- Node.js 20 or newer
+- Python **3.12+**
+- Node.js **20+** *(only needed to regenerate ranking CSV)*
 - Git
-- A modern browser
 
-Node.js is only required for regenerating the ranking CSV. The Django dashboard itself runs from Python.
+---
 
-## Local Installation - Windows PowerShell
+### Installation
 
-Open PowerShell inside the project folder:
+**Clone the repository**
 
-```powershell
-cd C:\Users\lenovo\Documents\Evalora
+```bash
+git clone https://github.com/yuvrajjitbaruah/Evalora.git
+cd Evalora
 ```
 
-Create and activate a virtual environment:
+**Create and activate a virtual environment**
 
-```powershell
+```bash
+# macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Windows (PowerShell)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install Python dependencies:
+**Install Python dependencies**
 
-```powershell
-python -m pip install --upgrade pip
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Create your local environment file:
+**Set up environment variables**
 
-```powershell
+```bash
+# macOS / Linux
+cp .env.example .env.local
+
+# Windows
 copy .env.example .env.local
 ```
 
-Run Django setup:
-
-```powershell
-python manage.py migrate
-python manage.py runserver 127.0.0.1:8000
-```
-
-Open the app:
-
-```text
-http://127.0.0.1:8000
-```
-
-## Local Installation - macOS or Linux
+**Run migrations and start the server**
 
 ```bash
-cd Evalora
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-cp .env.example .env.local
 python manage.py migrate
 python manage.py runserver 127.0.0.1:8000
 ```
 
-Open:
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
-```text
-http://127.0.0.1:8000
-```
+---
 
-## AI Setup
+## AI Configuration
 
-Evalora reads local secrets from `.env.local`. Never commit real API keys.
+Edit `.env.local` with your API keys. **Never commit this file.**
 
-```text
-DJANGO_SECRET_KEY=replace_with_a_local_django_secret
+```env
+DJANGO_SECRET_KEY=your_django_secret_key
 DJANGO_DEBUG=1
-DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost,testserver
-GOOGLE_AI_API_KEY=your_google_ai_key_here
-GEMINI_API_KEY=your_google_ai_key_here
-SARVAM_API_KEY=your_sarvam_ai_key_here
+DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost
+
+GOOGLE_AI_API_KEY=your_google_ai_key
+GEMINI_API_KEY=your_google_ai_key
+SARVAM_API_KEY=your_sarvam_key
+
 GEMINI_MODEL=gemini-2.5-flash
 SARVAM_MODEL=sarvam-30b
 AI_REQUEST_TIMEOUT_SECONDS=20
 ```
 
-Provider behavior:
+**Provider routing behavior:**
 
-- `auto` chooses the best configured cloud provider.
-- `gemini` forces Gemini when a Google AI key is available.
-- `sarvam` forces Sarvam when a Sarvam key is available.
-- If a provider is missing, rate-limited, or unreachable, Evalora returns a deterministic local result with a visible warning instead of breaking the workflow.
+- `auto` — selects the best available configured cloud provider
+- `gemini` — forces Gemini (requires `GOOGLE_AI_API_KEY`)
+- `sarvam` — forces Sarvam (requires `SARVAM_API_KEY`)
+- If no provider is reachable, Evalora returns a deterministic local result with a visible warning
 
-## Dataset Placement
+---
 
-The released hackathon dataset should not be committed to GitHub. Download/extract it locally into:
+## Dataset Setup
 
-```text
+The raw dataset should **not** be committed to the repository. Place it locally at:
 data/raw/India_runs_data_and_ai_challenge/
-```
 
 Expected files:
-
-```text
 candidates.jsonl
 sample_candidates.json
 candidate_schema.json
 job_description.docx
 submission_spec.docx
 redrob_signals_doc.docx
-```
 
-The cleaned upload folder intentionally excludes `data/raw/`.
+---
 
-## Reproduce the Ranking Output
+## Running the Ranker
 
-Install Node dependencies only if you add new Node packages. The current ranker uses built-in Node APIs.
-
-Run the full ranking pipeline after placing the raw dataset:
-
-```powershell
+```bash
+# Full ranking pipeline
 npm run rank
-```
 
-This writes:
-
-```text
-outputs/evalora_submission.csv
-public/data/top_candidates.json
-public/data/score_report.json
-```
-
-Run the sample pipeline:
-
-```powershell
+# Sample pipeline only
 npm run rank:sample
-```
 
-Validate the final CSV:
-
-```powershell
+# Validate the output CSV
 npm run validate
 ```
 
-The validator checks the required header, row count, rank order, score ordering, candidate uniqueness, candidate existence, and reasoning text.
+**Outputs generated:**
+outputs/evalora_submission.csv
+public/data/top_candidates.json
+public/data/score_report.json
 
-## Django API Routes
+The validator checks headers, row count, rank order, score ordering, candidate uniqueness, and reasoning text completeness.
 
-| Route | Method | Purpose |
-| --- | --- | --- |
-| `/` | GET | Evalora dashboard |
-| `/api/candidates/` | GET | Ranked top-candidate payload |
-| `/api/report/` | GET | Score report and model summary |
-| `/api/sample/` | GET | Bundled sample candidates |
-| `/api/rank-sample/` | POST | Rank an uploaded small JSON/JSONL sample |
-| `/api/ai/status/` | GET | Gemini/Sarvam configuration status |
-| `/api/ai/candidate-action/` | POST | AI Copilot recruiter action |
-| `/api/ats/analyze/` | POST | ATS resume/CV analysis |
-| `/download/submission/` | GET | Download ranked CSV |
+---
 
-## Upload to GitHub - Website Method
+## API Reference
 
-Use this if you want the simplest direct upload.
+| Route | Method | Description |
+|---|---|---|
+| `/` | `GET` | Evalora dashboard |
+| `/api/candidates/` | `GET` | Ranked top-candidate payload |
+| `/api/report/` | `GET` | Score report and model summary |
+| `/api/sample/` | `GET` | Bundled sample candidates |
+| `/api/rank-sample/` | `POST` | Rank an uploaded JSON/JSONL sample |
+| `/api/ai/status/` | `GET` | Gemini/Sarvam configuration status |
+| `/api/ai/candidate-action/` | `POST` | AI Copilot recruiter action |
+| `/api/ats/analyze/` | `POST` | ATS resume/CV analysis |
+| `/download/submission/` | `GET` | Download ranked CSV |
 
-1. Go to [github.com](https://github.com) and sign in.
-2. Click **New repository**.
-3. Repository name: `Evalora`.
-4. Description: `Recruiter-grade AI candidate ranking and ATS intelligence platform for India Runs.`
-5. Choose **Public** or **Private**.
-6. Do not add a README, license, or `.gitignore` on GitHub because this folder already has them.
-7. Create the repository.
-8. Open the new repository page.
-9. Click **uploading an existing file**.
-10. Drag and drop the contents of `C:\Users\lenovo\Documents\Evalora`.
-11. Confirm these are not included: `.env.local`, `.env`, `.venv`, `db.sqlite3`, `data/raw`.
-12. Commit the upload with this message:
+---
 
-```text
-Initial Evalora hackathon submission
+## Production Deployment
+
+```bash
+python manage.py collectstatic
 ```
 
-## Upload to GitHub - Git Command Method
+| Setting | Production Value |
+|---|---|
+| `DJANGO_DEBUG` | `0` |
+| `DJANGO_SECRET_KEY` | Strong random secret |
+| `DJANGO_ALLOWED_HOSTS` | Your domain only |
+| API Keys | Store in hosting provider's secret manager |
+| Database | Switch from SQLite to PostgreSQL |
 
-Use this if you prefer PowerShell and Git.
-
-From the project root:
-
-```powershell
-cd C:\Users\lenovo\Documents\Evalora
-git init
-git add .
-git commit -m "Initial Evalora hackathon submission"
-git branch -M main
-git remote add origin https://github.com/yuvrajjitbaruah/Evalora.git
-git push -u origin main
-```
-
-If GitHub says the repository already has commits, use:
-
-```powershell
-git pull origin main --allow-unrelated-histories
-git push -u origin main
-```
-
-If authentication opens a browser, complete the GitHub login and rerun the push if needed.
-
-## What Not to Upload
-
-These files are intentionally excluded by `.gitignore`:
-
-```text
-.env
-.env.local
-.env.*
-.venv/
-db.sqlite3
-staticfiles/
-__pycache__/
-*.pyc
-node_modules/
-data/raw/India_runs_data_and_ai_challenge/
-outputs/*.png
-outputs/*.jpg
-outputs/*.tmp
-outputs/*.log
-```
-
-Keep real API keys only in `.env.local`.
-
-## Production Notes
-
-For a real hosted deployment:
-
-- Set `DJANGO_DEBUG=0`.
-- Use a strong `DJANGO_SECRET_KEY`.
-- Set `DJANGO_ALLOWED_HOSTS` to the deployed domain only.
-- Store API keys in the hosting provider secret manager.
-- Run `python manage.py collectstatic` if your platform requires collected static files.
-- Use a production database if saved recruiter decisions become server-side data.
+---
 
 ## Troubleshooting
 
-### `python` is not recognized
+<details>
+<summary><strong><code>python</code> is not recognized on Windows</strong></summary>
 
-Install Python 3.12+ and reopen the terminal. On Windows, try:
+Install Python 3.12+ and reopen the terminal. Try:
 
 ```powershell
 py -3 -m venv .venv
 ```
 
-### PowerShell blocks virtualenv activation
+</details>
 
-Run:
+<details>
+<summary><strong>PowerShell blocks virtual environment activation</strong></summary>
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 .\.venv\Scripts\Activate.ps1
 ```
 
-### AI shows local fallback
+</details>
+
+<details>
+<summary><strong>AI shows local fallback warning</strong></summary>
 
 Check `.env.local` and verify:
+- `GOOGLE_AI_API_KEY` or `GEMINI_API_KEY` is set for Gemini
+- `SARVAM_API_KEY` is set for Sarvam
+- The Django server was restarted after editing `.env.local`
+- The machine running Django has internet access
 
-- `GOOGLE_AI_API_KEY` or `GEMINI_API_KEY` is present for Gemini.
-- `SARVAM_API_KEY` is present for Sarvam.
-- The server was restarted after editing `.env.local`.
-- Internet access is available from the machine running Django.
+</details>
 
-### PDF resume extraction is weak
+<details>
+<summary><strong>PDF resume extraction returns weak results</strong></summary>
 
-Some PDFs are scanned images and do not contain selectable text. Use a DOCX/TXT resume or paste extracted resume text into the ATS Analyzer.
+Some PDFs are scanned images without selectable text. Paste extracted resume text directly into the ATS Analyzer, or upload a `.docx` or `.txt` file instead.
 
-### `npm run validate` cannot find candidates
+</details>
 
-Place the released challenge dataset under:
+<details>
+<summary><strong><code>npm run validate</code> cannot find candidates</strong></summary>
 
-```text
-data/raw/India_runs_data_and_ai_challenge/
-```
+Ensure the dataset is placed under `data/raw/India_runs_data_and_ai_challenge/`, then rerun `npm run validate`.
 
-Then rerun:
+</details>
 
-```powershell
-npm run validate
-```
+---
 
-## Submission Checklist
+## Contributing
 
-- `outputs/evalora_submission.csv` exists.
-- CSV validates with `npm run validate`.
-- README screenshot is present at `docs/screenshots/evalora-dashboard.png`.
-- `.env.local`, `.venv`, `db.sqlite3`, and `data/raw` are not uploaded.
-- GitHub repository is available at `https://github.com/yuvrajjitbaruah/Evalora`.
-- Deck PDF is prepared separately if required by the hackathon portal.
-- `submission_metadata.yaml` is reviewed before final submission.
+Contributions are welcome. To contribute:
 
-## Links
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'feat: add your feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-- GitHub: <https://github.com/yuvrajjitbaruah/Evalora>
-- LinkedIn: <https://www.linkedin.com/in/yuvrajjitbaruah>
-- Feedback or suggestions: <dev.yuvrajjitbaruah@gmail.com>
+---
 
 ## License
 
-This project is prepared for hackathon submission and portfolio review. Add a formal license file before wider reuse.
+Distributed under the **Apache License 2.0**. See [`LICENSE`](LICENSE) for full terms.
+
+---
+
+## Author
+
+**Yuvrajjit Baruah**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-yuvrajjitbaruah-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/yuvrajjitbaruah)
+[![GitHub](https://img.shields.io/badge/GitHub-yuvrajjitbaruah-181717?style=flat-square&logo=github)](https://github.com/yuvrajjitbaruah)
+[![Email](https://img.shields.io/badge/Email-dev.yuvrajjitbaruah@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:dev.yuvrajjitbaruah@gmail.com)
+
+---
+
+<div align="center">
+
+⭐ **If Evalora helped you, give it a star!** ⭐
+
+</div>
