@@ -60,22 +60,24 @@ Config     →  .env.local (never committed)
 ---
 
 ## Project Structure
-Evalora/
-├── evalora_project/          # Django settings and root URL config
-├── recruiter/                # Main app — views, API, AI services, templates, static UI
-├── src/ranker/               # Deterministic Node.js ranking and CSV validation engine
-├── public/
-│   ├── data/                 # Generated dashboard data (JSON)
-│   └── js/                   # Standalone ranking core for static preview
-├── outputs/                  # Submission CSV files
-├── docs/                     # Methodology notes and screenshots
-├── data/                     # Dataset placement (raw data excluded from repo)
-├── scripts/                  # Utility scripts
-├── manage.py                 # Django entry point
-├── requirements.txt          # Python dependencies
-└── package.json              # Node scripts (rank, validate)
 
----
+```text
+Evalora/
+├── evalora_project/        # Django settings and root URL config
+├── recruiter/              # Main app — views, API, AI services, templates, static UI
+├── src/
+│   └── ranker/             # Deterministic Node.js ranking and CSV validation engine
+├── public/
+│   ├── data/               # Generated dashboard data (JSON)
+│   └── js/                 # Standalone ranking core for static preview
+├── outputs/                # Submission CSV files
+├── docs/                   # Methodology notes and screenshots
+├── data/                   # Dataset placement (raw data excluded from repo)
+├── scripts/                # Utility scripts
+├── manage.py               # Django entry point
+├── requirements.txt        # Python dependencies
+└── package.json            # Node scripts (rank, validate)
+```
 
 ## Getting Started
 
