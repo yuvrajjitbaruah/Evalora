@@ -1,0 +1,23 @@
+{
+  "name": "evalora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evalora ranks candidates for the India Runs Data & AI Challenge using semantic evidence, career fit, and behavioral signals.",
+  "scripts": {
+    "rank": "node src/ranker/rank.mjs --candidates data/raw/India_runs_data_and_ai_challenge/candidates.jsonl --out outputs/evalora_submission.csv --json public/data/top_candidates.json --report public/data/score_report.json",
+    "rank:sample": "node src/ranker/rank.mjs --candidates data/raw/India_runs_data_and_ai_challenge/sample_candidates.json --out outputs/evalora_sample_submission.csv --json public/data/sample_candidates_ranked.json --report public/data/sample_score_report.json --top 25",
+    "validate": "node src/ranker/validate-submission.mjs --submission outputs/evalora_submission.csv --candidates data/raw/India_runs_data_and_ai_challenge/candidates.jsonl",
+    "dev": ".venv\\Scripts\\python.exe manage.py runserver 127.0.0.1:8000",
+    "django:check": ".venv\\Scripts\\python.exe manage.py check"
+  },
+  "keywords": [
+    "candidate-ranking",
+    "semantic-search",
+    "recruiting",
+    "hackathon",
+    "india-runs"
+  ],
+  "author": "Yuvrajjit Baruah",
+  "license": "MIT"
+}

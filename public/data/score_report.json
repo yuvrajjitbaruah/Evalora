@@ -1,0 +1,209 @@
+{
+  "project": "Evalora",
+  "role": {
+    "title": "Senior AI Engineer - Founding Team",
+    "company": "Redrob AI",
+    "anchorDate": "2026-06-01",
+    "idealExperience": [
+      5,
+      9
+    ],
+    "preferredCities": [
+      "pune",
+      "noida",
+      "delhi",
+      "gurgaon",
+      "hyderabad",
+      "mumbai",
+      "bangalore",
+      "bengaluru"
+    ],
+    "mustHaveConcepts": [
+      "production retrieval",
+      "hybrid search",
+      "ranking systems",
+      "embeddings",
+      "vector databases",
+      "evaluation frameworks",
+      "strong python",
+      "product engineering"
+    ]
+  },
+  "generated_at": "2026-06-01T18:13:03.220Z",
+  "input": {
+    "candidates_path": "data/raw/India_runs_data_and_ai_challenge/candidates.jsonl",
+    "candidates_scored": 100000,
+    "elapsed_ms": 24092,
+    "output_csv": "outputs/evalora_submission.csv"
+  },
+  "aggregate": {
+    "mean_score": 0.2747,
+    "component_means": {
+      "title": 0.1058,
+      "semantic": 0.1651,
+      "skills": 0.0251,
+      "career": 0.2841,
+      "experience": 0.6401,
+      "behavior": 0.5101,
+      "location": 0.6759,
+      "integrity": 0.9678,
+      "penalty": 0.0146
+    },
+    "concept_hits": [
+      {
+        "name": "production",
+        "count": 75291
+      },
+      {
+        "name": "collaboration",
+        "count": 74644
+      },
+      {
+        "name": "llmDepth",
+        "count": 36555
+      },
+      {
+        "name": "product",
+        "count": 25279
+      },
+      {
+        "name": "retrievalRanking",
+        "count": 18537
+      },
+      {
+        "name": "evaluation",
+        "count": 1764
+      }
+    ],
+    "risk_flags": [
+      {
+        "name": "services-only background",
+        "count": 9699
+      },
+      {
+        "name": "outside senior IC range",
+        "count": 4686
+      },
+      {
+        "name": "CV/speech-heavy fit gap",
+        "count": 55
+      },
+      {
+        "name": "experience mismatch",
+        "count": 49
+      },
+      {
+        "name": "summary-year mismatch",
+        "count": 29
+      },
+      {
+        "name": "thin high-proficiency skills",
+        "count": 13
+      },
+      {
+        "name": "keyword-heavy without career proof",
+        "count": 4
+      }
+    ]
+  },
+  "shortlist": {
+    "count": 100,
+    "min_score": 0.7404,
+    "max_score": 0.8796,
+    "top_titles": [
+      {
+        "name": "Recommendation Systems Engineer",
+        "count": 18
+      },
+      {
+        "name": "Applied ML Engineer",
+        "count": 14
+      },
+      {
+        "name": "AI Engineer",
+        "count": 11
+      },
+      {
+        "name": "Search Engineer",
+        "count": 11
+      },
+      {
+        "name": "Machine Learning Engineer",
+        "count": 10
+      },
+      {
+        "name": "Senior Data Scientist",
+        "count": 7
+      },
+      {
+        "name": "Senior NLP Engineer",
+        "count": 6
+      },
+      {
+        "name": "NLP Engineer",
+        "count": 5
+      },
+      {
+        "name": "Staff Machine Learning Engineer",
+        "count": 5
+      },
+      {
+        "name": "Senior Machine Learning Engineer",
+        "count": 4
+      }
+    ],
+    "top_locations": [
+      {
+        "name": "Delhi, Delhi",
+        "count": 7
+      },
+      {
+        "name": "Kolkata, West Bengal",
+        "count": 7
+      },
+      {
+        "name": "Noida, Uttar Pradesh",
+        "count": 7
+      },
+      {
+        "name": "Trivandrum, Kerala",
+        "count": 7
+      },
+      {
+        "name": "Coimbatore, Tamil Nadu",
+        "count": 6
+      },
+      {
+        "name": "Gurgaon, Haryana",
+        "count": 6
+      },
+      {
+        "name": "Indore, Madhya Pradesh",
+        "count": 6
+      },
+      {
+        "name": "Jaipur, Rajasthan",
+        "count": 6
+      },
+      {
+        "name": "Kochi, Kerala",
+        "count": 6
+      },
+      {
+        "name": "Pune, Maharashtra",
+        "count": 5
+      }
+    ],
+    "component_means": {
+      "title": 0.9049,
+      "semantic": 0.7767,
+      "skills": 0.4409,
+      "career": 0.8665,
+      "experience": 0.9846,
+      "behavior": 0.7491,
+      "location": 0.7742,
+      "integrity": 1,
+      "penalty": 0
+    }
+  }
+}

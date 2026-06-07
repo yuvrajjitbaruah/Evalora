@@ -1,0 +1,189 @@
+{
+  "project": "Evalora",
+  "role": {
+    "title": "Senior AI Engineer - Founding Team",
+    "company": "Redrob AI",
+    "anchorDate": "2026-06-01",
+    "idealExperience": [
+      5,
+      9
+    ],
+    "preferredCities": [
+      "pune",
+      "noida",
+      "delhi",
+      "gurgaon",
+      "hyderabad",
+      "mumbai",
+      "bangalore",
+      "bengaluru"
+    ],
+    "mustHaveConcepts": [
+      "production retrieval",
+      "hybrid search",
+      "ranking systems",
+      "embeddings",
+      "vector databases",
+      "evaluation frameworks",
+      "strong python",
+      "product engineering"
+    ]
+  },
+  "generated_at": "2026-06-01T18:34:59.455Z",
+  "input": {
+    "candidates_path": "data/raw/India_runs_data_and_ai_challenge/sample_candidates.json",
+    "candidates_scored": 50,
+    "elapsed_ms": 19,
+    "output_csv": "outputs/evalora_sample_submission.csv"
+  },
+  "aggregate": {
+    "mean_score": 0.275,
+    "component_means": {
+      "title": 0.1158,
+      "semantic": 0.1811,
+      "skills": 0.029,
+      "career": 0.265,
+      "experience": 0.6512,
+      "behavior": 0.5142,
+      "location": 0.666,
+      "integrity": 0.9604,
+      "penalty": 0.018
+    },
+    "concept_hits": [
+      {
+        "name": "production",
+        "count": 42
+      },
+      {
+        "name": "collaboration",
+        "count": 38
+      },
+      {
+        "name": "llmDepth",
+        "count": 16
+      },
+      {
+        "name": "product",
+        "count": 16
+      },
+      {
+        "name": "retrievalRanking",
+        "count": 10
+      },
+      {
+        "name": "evaluation",
+        "count": 2
+      }
+    ],
+    "risk_flags": [
+      {
+        "name": "services-only background",
+        "count": 6
+      },
+      {
+        "name": "outside senior IC range",
+        "count": 3
+      }
+    ]
+  },
+  "shortlist": {
+    "count": 25,
+    "min_score": 0.2871,
+    "max_score": 0.791,
+    "top_titles": [
+      {
+        "name": "Frontend Engineer",
+        "count": 3
+      },
+      {
+        "name": "Project Manager",
+        "count": 3
+      },
+      {
+        "name": "Graphic Designer",
+        "count": 2
+      },
+      {
+        "name": "Mechanical Engineer",
+        "count": 2
+      },
+      {
+        "name": "Accountant",
+        "count": 1
+      },
+      {
+        "name": "Backend Engineer",
+        "count": 1
+      },
+      {
+        "name": "Business Analyst",
+        "count": 1
+      },
+      {
+        "name": "Civil Engineer",
+        "count": 1
+      },
+      {
+        "name": "Cloud Engineer",
+        "count": 1
+      },
+      {
+        "name": "Data Engineer",
+        "count": 1
+      }
+    ],
+    "top_locations": [
+      {
+        "name": "Hyderabad, Telangana",
+        "count": 5
+      },
+      {
+        "name": "Trivandrum, Kerala",
+        "count": 3
+      },
+      {
+        "name": "Gurgaon, Haryana",
+        "count": 2
+      },
+      {
+        "name": "Kochi, Kerala",
+        "count": 2
+      },
+      {
+        "name": "London",
+        "count": 2
+      },
+      {
+        "name": "Ahmedabad, Gujarat",
+        "count": 1
+      },
+      {
+        "name": "Berlin",
+        "count": 1
+      },
+      {
+        "name": "Bhubaneswar, Odisha",
+        "count": 1
+      },
+      {
+        "name": "Chandigarh, Chandigarh",
+        "count": 1
+      },
+      {
+        "name": "Coimbatore, Tamil Nadu",
+        "count": 1
+      }
+    ],
+    "component_means": {
+      "title": 0.1531,
+      "semantic": 0.2175,
+      "skills": 0.0442,
+      "career": 0.369,
+      "experience": 0.8592,
+      "behavior": 0.545,
+      "location": 0.7488,
+      "integrity": 1,
+      "penalty": 0
+    }
+  }
+}

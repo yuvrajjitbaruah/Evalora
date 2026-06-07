@@ -1,0 +1,26 @@
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+db.sqlite3
+staticfiles/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+
+# The released challenge dataset is large and should be downloaded separately.
+data/raw/India_runs_data_and_ai_challenge/
+
+# Generated local previews and browser captures.
+outputs/*.png
+outputs/*.jpg
+outputs/*.tmp
+outputs/*.log
+outputs/evalora-before-*.png
+outputs/evalora-after-*.png
+
+# Keep the ranked CSV and generated public JSON outputs commit-ready.
+!outputs/evalora_submission.csv
+!outputs/evalora_sample_submission.csv

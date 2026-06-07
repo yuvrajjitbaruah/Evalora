@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class RecruiterConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'recruiter'
+    verbose_name = 'Evalora Recruiter Console'

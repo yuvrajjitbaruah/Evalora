@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Evalora is a project-grade AI recruiting console for ranking candidates by evidence, behavior, and fit."
+    />
+    <title>Evalora | Intelligence Behind Every Hire</title>
+    <link rel="icon" href="{% static 'recruiter/assets/evalora-favicon-white.png' %}" type="image/png" />
+    <link rel="apple-touch-icon" href="{% static 'recruiter/assets/evalora-favicon-white.png' %}" />
+    <link rel="stylesheet" href="{% static 'recruiter/css/dashboard.css' %}" />
+  </head>
+  <body>
+    <section class="landing" id="landing" aria-label="Evalora introduction">
+      <div class="landing-inner">
+        <nav class="landing-nav" aria-label="Landing navigation">
+          <a class="landing-brand" href="#landing" aria-label="Evalora home">
+            <img src="{% static 'recruiter/assets/evalora-logo-transparent.png' %}" alt="Evalora" />
+            <span>Intelligence Behind Every Hire</span>
+          </a>
+          <div class="landing-links">
+            <a href="#overview">Console</a>
+            <a href="#decision-intel">Decision Intel</a>
+            <a href="#ats">ATS Analyzer</a>
+            <a href="{{ github_repo }}" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button compact-button" href="#overview">Launch Evalora</a>
+          </div>
+        </nav>
+
+        <div class="landing-hero">
+          <div class="landing-copy">
+            <p class="eyebrow">India Runs / AI Candidate Discovery</p>
+            <h1>Shortlist candidates by evidence, not keyword noise.</h1>
+            <p>
+              Evalora is a Django-powered recruiting intelligence platform that ranks 100,000 candidate profiles, explains the shortlist, analyzes resumes with Gemini and Sarvam, and gives recruiters a decision-ready workflow.
+            </p>
+            <div class="landing-actions">
+              <a class="button" href="#overview">Open live console</a>
+              <a class="button secondary" href="#ats">Try AI ATS</a>
+              <a class="button ghost" href="{% url 'recruiter:download_submission' %}" download>Download CSV</a>
+            </div>
+          </div>
+
+          <div class="landing-board" aria-label="Evalora product preview">
+            <article class="landing-card primary-preview">
+              <span>Current role</span>
+              <strong>Senior AI Engineer</strong>
+              <small>Semantic proof + behavior + logistics + risk controls</small>
+              <div class="preview-bars" aria-hidden="true">
+                <i style="--w: 88%"></i>
+                <i style="--w: 76%"></i>
+                <i style="--w: 64%"></i>
+              </div>
+            </article>
+            <article class="landing-card">
+              <span>Candidates scored</span>
+              <strong>1,00,000</strong>
+              <small>Streaming JSONL ranker</small>
+            </article>
+            <article class="landing-card">
+              <span>AI providers</span>
+              <strong>Gemini + Sarvam</strong>
+              <small>Cloud AI with local fallback guardrails</small>
+            </article>
+            <article class="landing-card">
+              <span>ATS intelligence</span>
+              <strong>Resume fit lens</strong>
+              <small>PDF/DOCX/TXT parsing with evidence and gaps</small>
+            </article>
+          </div>
+        </div>
+
+        <div class="landing-proof" aria-label="What Evalora does">
+          <article>
+            <span>01</span>
+            <strong>Understand the role</strong>
+            <small>Distills the job description into weighted proof: retrieval systems, ranking, embeddings, product ownership, evaluation, and logistics.</small>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Read the full profile</strong>
+            <small>Scores career history, skill depth, behavior signals, recent activity, response rate, notice period, and risk flags together.</small>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Give recruiters control</strong>
+            <small>Shortlist, compare, delete, restore, annotate, export, inspect AI briefs, and run resume ATS analysis without leaving the console.</small>
+          </article>
+        </div>
+
+        <div class="landing-system" aria-label="Evalora workflow">
+          <div>
+            <p class="eyebrow">Built for the submission</p>
+            <h2>One project, three recruiter-grade layers.</h2>
+          </div>
+          <div class="system-flow">
+            <article>
+              <strong>Hybrid ranker</strong>
+              <span>Runs locally over the candidate JSONL pool and exports the required CSV.</span>
+            </article>
+            <article>
+              <strong>Decision console</strong>
+              <span>Turns the top 100 into a working recruiter board with filters, decisions, compare, and deletion controls.</span>
+            </article>
+            <article>
+              <strong>AI intelligence</strong>
+              <span>Uses Gemini and Sarvam for briefs, outreach, risk audits, interview kits, and resume/CV analysis.</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="app-shell">
+      <aside class="rail" aria-label="Primary navigation">
+        <a class="brand" href="#landing" aria-label="Evalora dashboard">
+          <span class="brand-lockup"><img src="{% static 'recruiter/assets/evalora-logo-transparent.png' %}" alt="Evalora" /></span>
+          <span class="brand-copy">
+            <strong>Evalora</strong>
+            <small>Intelligence Behind Every Hire</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#overview">Command</a>
+          <a href="#insights">Insights</a>
+          <a href="#shortlist">Shortlist</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#sandbox">Sandbox</a>
+          <a href="#ats">ATS Analyzer</a>
+          <a href="#ai-copilot">AI Copilot</a>
+          <a href="#model">Model Audit</a>
+        </nav>
+
+        <div class="rail-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Submission mode</strong>
+            <small>CPU-only, no hosted model calls during ranking.</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="hero" id="overview">
+          <div class="hero-copy">
+            <img class="hero-logo" src="{% static 'recruiter/assets/evalora-logo-transparent.png' %}" alt="Evalora" />
+            <p class="eyebrow">India Runs / Track 1 Candidate Discovery</p>
+            <h1>Recruiter-grade AI ranking, explainability, and workflow in one console.</h1>
+            <p class="hero-subtitle">
+              Evalora reads the full profile, career evidence, behavior signals, risk flags, and logistics before deciding who belongs in the final shortlist.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="{% url 'recruiter:download_submission' %}" download>Download ranked CSV</a>
+              <button class="button secondary" id="copy-command" type="button">Copy Django command</button>
+              <a class="button ghost" href="#sandbox">Open sandbox</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Current run summary">
+            <div>
+              <span>Role</span>
+              <strong>Senior AI Engineer</strong>
+              <small>Founding AI team, Redrob AI</small>
+            </div>
+            <div>
+              <span>Fit strategy</span>
+              <strong>Evidence-first hybrid ranker</strong>
+              <small>Semantic proof + behavior + risk controls</small>
+            </div>
+            <div>
+              <span>Current view</span>
+              <strong id="filtered-count">-- candidates</strong>
+              <small>After filters and decision state</small>
+            </div>
+          </div>
+        </header>
+
+        <section class="metric-grid" aria-label="Run metrics">
+          <article class="metric">
+            <span>Candidates scored</span>
+            <strong id="metric-count">--</strong>
+            <small>Full JSONL pool streamed</small>
+          </article>
+          <article class="metric">
+            <span>Ranking time</span>
+            <strong id="metric-time">--</strong>
+            <small>Local CPU runtime</small>
+          </article>
+          <article class="metric">
+            <span>Top fit</span>
+            <strong id="metric-top">--</strong>
+            <small>Best weighted score</small>
+          </article>
+          <article class="metric">
+            <span>Rank 100 cutoff</span>
+            <strong id="metric-cutoff">--</strong>
+            <small>Final shortlist threshold</small>
+          </article>
+          <article class="metric accent-metric">
+            <span>Local decisions</span>
+            <strong id="metric-decisions">0</strong>
+            <small>Saved in this browser</small>
+          </article>
+        </section>
+
+        <section class="decision-intel" id="decision-intel" aria-label="Decision intelligence">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Decision Intelligence</p>
+              <h2>Recruiter command snapshot</h2>
+            </div>
+            <div class="smart-filter-actions" aria-label="Smart shortlist filters">
+              <button class="button secondary compact-button" type="button" data-smart-filter="fast-track">Fast-track</button>
+              <button class="button secondary compact-button" type="button" data-smart-filter="retrieval">Retrieval experts</button>
+              <button class="button secondary compact-button" type="button" data-smart-filter="follow-up">Needs follow-up</button>
+              <button class="button ghost compact-button" type="button" data-smart-filter="clear">Clear filters</button>
+            </div>
+          </div>
+          <div class="decision-intel-grid" id="decision-intel-grid"></div>
+        </section>
+
+        <section class="quality-strip" aria-label="Evalora operating layers">
+          <article>
+            <span>01</span>
+            <strong>JD intelligence</strong>
+            <small>Role needs are distilled into evidence signals before scoring starts.</small>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Candidate graph</strong>
+            <small>Career history, skills, behavior, activity, logistics, and risk all stay visible.</small>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Fit-risk lens</strong>
+            <small>Keyword stuffing, stale activity, mismatch, and thin evidence are penalized.</small>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Recruiter handoff</strong>
+            <small>Compare, review, shortlist, reject, annotate, and export without leaving the console.</small>
+          </article>
+        </section>
+
+        <section class="insight-grid" id="insights" aria-label="Shortlist intelligence">
+          <article class="panel">
+            <div class="panel-heading compact">
+              <div>
+                <p class="eyebrow">Role Understanding</p>
+                <h2>What Evalora optimizes for</h2>
+              </div>
+            </div>
+            <div class="requirement-list" id="requirement-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading compact">
+              <div>
+                <p class="eyebrow">Score Anatomy</p>
+                <h2>Average strength across the top 100</h2>
+              </div>
+            </div>
+            <div class="component-bars" id="component-bars"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading compact">
+              <div>
+                <p class="eyebrow">Talent Shape</p>
+                <h2>Role families surfaced by the ranker</h2>
+              </div>
+            </div>
+            <div class="mini-list" id="role-mix"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading compact">
+              <div>
+                <p class="eyebrow">Recruiter Readiness</p>
+                <h2>Availability and logistics signals</h2>
+              </div>
+            </div>
+            <div class="readiness-board" id="readiness-board"></div>
+          </article>
+        </section>
+
+        <section class="shortlist-section" id="shortlist" aria-label="Ranked shortlist">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Trusted Shortlist</p>
+              <h2>Top recommended candidates</h2>
+            </div>
+            <div class="shortlist-toolbar">
+              <button class="button secondary compact-button" id="download-filtered" type="button">Export shown</button>
+              <button class="button danger compact-button" id="delete-visible" type="button">Delete shown</button>
+              <button class="button danger compact-button" id="delete-all" type="button">Delete all</button>
+              <button class="button secondary compact-button" id="restore-deleted" type="button">Restore deleted</button>
+              <div class="view-toggle" aria-label="View mode">
+                <button type="button" class="icon-button active" data-view="table">Table</button>
+                <button type="button" class="icon-button" data-view="cards">Cards</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-panel" aria-label="Shortlist controls">
+            <label class="field wide">
+              <span>Search</span>
+              <input id="search-input" type="search" placeholder="Search title, city, skill, candidate ID" />
+            </label>
+            <label class="field">
+              <span>Persona</span>
+              <select id="persona-filter">
+                <option value="all">All fits</option>
+                <option value="retrieval">Retrieval/ranking specialists</option>
+                <option value="founding">Founding-team profile</option>
+                <option value="available">Available now</option>
+                <option value="product">Product-company depth</option>
+                <option value="watch">Watch flags</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Location</span>
+              <select id="location-filter">
+                <option value="all">All locations</option>
+                <option value="target">Target cities</option>
+                <option value="india">India only</option>
+                <option value="relocate">Relocation possible</option>
+                <option value="risk">Location risk</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Readiness</span>
+              <select id="readiness-filter">
+                <option value="all">Any readiness</option>
+                <option value="now">Ready now</option>
+                <option value="warm">Warm lead</option>
+                <option value="risk">Needs follow-up</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Sort</span>
+              <select id="sort-select">
+                <option value="rank">Rank order</option>
+                <option value="score">Score high to low</option>
+                <option value="response">Response rate</option>
+                <option value="notice">Shortest notice</option>
+                <option value="experience">Experience fit</option>
+                <option value="github">GitHub signal</option>
+              </select>
+            </label>
+            <label class="field range-field">
+              <span>Minimum score <strong id="score-label">0.00</strong></span>
+              <input id="score-filter" type="range" min="0" max="1" step="0.01" value="0" />
+            </label>
+          </div>
+
+          <div class="active-filters" id="active-filters" aria-live="polite"></div>
+          <div class="list-status" id="list-status" aria-live="polite"></div>
+
+          <section class="compare-tray" id="compare-tray" aria-label="Candidate comparison">
+            <div>
+              <p class="eyebrow">Compare Tray</p>
+              <h3 id="compare-title">Select up to 3 candidates</h3>
+            </div>
+            <div class="compare-actions">
+              <button class="button secondary compact-button" id="clear-compare" type="button">Clear compare</button>
+            </div>
+            <div class="compare-grid" id="compare-grid"></div>
+          </section>
+
+          <div class="table-shell" id="table-view">
+            <table>
+              <thead>
+                <tr>
+                  <th>Select</th>
+                  <th>Rank</th>
+                  <th>Candidate</th>
+                  <th>Fit</th>
+                  <th>Signals</th>
+                  <th>Decision</th>
+                  <th>Evidence</th>
+                </tr>
+              </thead>
+              <tbody id="candidate-table"></tbody>
+            </table>
+          </div>
+
+          <div class="candidate-card-grid" id="card-view" hidden></div>
+          <div class="list-footer">
+            <span id="list-range">Showing --</span>
+            <button class="button secondary compact-button" id="load-more" type="button">Show 10 more</button>
+          </div>
+        </section>
+
+        <section class="workflow-section" id="workflow" aria-label="Recruiter workflow">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Recruiter Workflow</p>
+              <h2>Local review board</h2>
+            </div>
+            <button class="button secondary compact-button" id="reset-workflow" type="button">Reset decisions</button>
+          </div>
+          <div class="workflow-grid">
+            <article>
+              <h3>Shortlisted</h3>
+              <div id="workflow-shortlisted" class="workflow-list"></div>
+            </article>
+            <article>
+              <h3>Needs review</h3>
+              <div id="workflow-review" class="workflow-list"></div>
+            </article>
+            <article>
+              <h3>Rejected</h3>
+              <div id="workflow-rejected" class="workflow-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="sandbox-section" id="sandbox" aria-label="Sandbox ranker">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Sandbox</p>
+              <h2>Run Evalora on a small candidate sample</h2>
+            </div>
+            <button class="button secondary compact-button" id="download-sandbox" type="button" disabled>Download sandbox CSV</button>
+          </div>
+          <div class="sandbox-grid">
+            <div class="dropzone">
+              <input id="sample-upload" type="file" accept=".json,.jsonl,.txt" />
+              <strong>Upload JSON or JSONL</strong>
+              <span>Designed for up to 100 candidates, matching the hackathon sandbox requirement.</span>
+              <button class="button ghost compact-button" id="load-sample" type="button">Load bundled sample</button>
+            </div>
+            <div class="sandbox-output">
+              <div class="empty-state" id="sandbox-empty">No sample ranked yet.</div>
+              <ol id="sandbox-results" class="sandbox-results"></ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="ats-section" id="ats" aria-label="AI resume and CV analyzer">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">ATS Intelligence</p>
+              <h2>Analyze any resume or CV against the role</h2>
+            </div>
+            <div class="provider-status" id="ats-status">
+              <span class="provider-chip muted-chip">Ready for resume text</span>
+            </div>
+          </div>
+          <div class="ats-grid">
+            <article class="ats-input-card">
+              <label class="field">
+                <span>Resume or CV file</span>
+                <input id="ats-file" type="file" accept=".txt,.md,.json,.jsonl,.docx,.pdf" />
+              </label>
+              <label class="field">
+                <span>Resume or CV text</span>
+                <textarea id="ats-resume" placeholder="Paste the candidate resume, CV, LinkedIn summary, or extracted profile text here."></textarea>
+              </label>
+              <label class="field">
+                <span>Job description override</span>
+                <textarea id="ats-job" placeholder="Optional. Leave blank to use Evalora's Senior AI Engineer founding-team role."></textarea>
+              </label>
+              <div class="ats-actions">
+              <label class="field">
+                <span>AI provider</span>
+                <select id="ats-provider" class="visually-hidden-select" aria-label="ATS AI provider">
+                  <option value="auto">Auto route</option>
+                  <option value="gemini">Gemini</option>
+                  <option value="sarvam">Sarvam</option>
+                  <option value="local">Local ATS engine</option>
+                </select>
+                <div class="segmented-control" data-provider-target="ats-provider" aria-label="ATS AI provider">
+                  <button type="button" class="active" data-provider-value="auto">Auto</button>
+                  <button type="button" data-provider-value="gemini">Gemini</button>
+                  <button type="button" data-provider-value="sarvam">Sarvam</button>
+                  <button type="button" data-provider-value="local">Local</button>
+                </div>
+              </label>
+                <button class="button" id="ats-run" type="button">Analyze resume</button>
+                <button class="button secondary" id="ats-compare" type="button">Compare AI</button>
+              </div>
+            </article>
+            <article class="ats-output-card">
+              <div class="ats-scoreboard">
+                <div>
+                  <span>ATS match</span>
+                  <strong id="ats-score">--</strong>
+                </div>
+                <div>
+                  <span>Verdict</span>
+                  <strong id="ats-verdict">Awaiting resume</strong>
+                </div>
+                <div>
+                  <span>Provider</span>
+                  <strong id="ats-provider-label">Ready</strong>
+                </div>
+              </div>
+              <div class="ats-result-grid">
+                <div>
+                  <h3>Strengths</h3>
+                  <ul id="ats-strengths">
+                    <li>Role evidence will appear after analysis.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Gaps</h3>
+                  <ul id="ats-gaps">
+                    <li>Missing proof will appear after analysis.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Risk checks</h3>
+                  <ul id="ats-risks">
+                    <li>Risk flags will appear after analysis.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Interview plan</h3>
+                  <ul id="ats-questions">
+                    <li>Screening questions will appear after analysis.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ats-summary" id="ats-summary">Upload or paste a resume to generate recruiter-ready ATS scoring, evidence, missing proof, and next interview questions.</div>
+              <div class="ats-provider-compare" id="ats-provider-compare" hidden></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="model-section" id="model" aria-label="Model audit">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Model Audit</p>
+              <h2>Why the ranker is defensible</h2>
+            </div>
+          </div>
+          <div class="audit-grid">
+            <article>
+              <strong>JD interpreter</strong>
+              <span>Turns the long-form JD into role evidence: retrieval, ranking, embeddings, vector infrastructure, evaluation, product depth, and logistics.</span>
+            </article>
+            <article>
+              <strong>Risk controls</strong>
+              <span>Down-weights keyword stuffing, services-only backgrounds, experience mismatches, stale candidates, and CV/speech-heavy profiles without IR fit.</span>
+            </article>
+            <article>
+              <strong>Behavior layer</strong>
+              <span>Uses Redrob signals like last active date, recruiter response, notice period, interview completion, verification, and GitHub signal.</span>
+            </article>
+            <article>
+              <strong>Reproducibility</strong>
+              <span>Streams the 100K pool, ranks deterministically, and writes the exact CSV format without network calls during the ranking step.</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="ai-section" id="ai-copilot" aria-label="AI Copilot">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">AI Copilot</p>
+              <h2>Gemini and Sarvam-powered recruiter actions</h2>
+            </div>
+            <div class="provider-status" id="ai-provider-status">
+              <span class="provider-chip muted-chip">Checking providers</span>
+            </div>
+          </div>
+          <div class="ai-grid">
+            <article class="ai-command-card">
+              <label class="field">
+                <span>Candidate</span>
+                <select id="ai-candidate-select"></select>
+              </label>
+              <label class="field">
+                <span>Provider</span>
+                <select id="ai-provider-select">
+                  <option value="auto">Auto route</option>
+                  <option value="gemini">Gemini</option>
+                  <option value="sarvam">Sarvam</option>
+                  <option value="local">Local recruiter engine</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Action</span>
+                <select id="ai-task-select">
+                  <option value="brief">Recruiter brief</option>
+                  <option value="questions">Interview questions</option>
+                  <option value="risk">Risk audit</option>
+                  <option value="scorecard">Structured scorecard</option>
+                  <option value="boolean_search">Boolean sourcing query</option>
+                  <option value="calibration">Recruiter calibration note</option>
+                  <option value="outreach">Personalized outreach</option>
+                  <option value="hindi_outreach">Hindi outreach draft</option>
+                </select>
+              </label>
+              <button class="button" id="ai-run" type="button">Generate insight</button>
+            </article>
+            <article class="ai-output-card">
+              <div>
+                <p class="eyebrow">Generated Output</p>
+                <h3 id="ai-output-title">Ready for a candidate</h3>
+              </div>
+              <div class="ai-output" id="ai-output">Choose a candidate and action to generate an AI-assisted recruiter note. If external keys are not configured, Evalora returns a deterministic local fallback instead of breaking the workflow.</div>
+            </article>
+            <article class="ai-feature-card">
+              <strong>What this unlocks</strong>
+              <span>Recruiter briefs, interview kits, risk audits, outreach drafts, Indian-language communication, and fallback local summaries from the same shortlist evidence.</span>
+            </article>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-brand">
+            <img src="{% static 'recruiter/assets/evalora-logo-transparent.png' %}" alt="Evalora" />
+            <div class="footer-copy">
+              <strong>Evalora</strong>
+              <span>Built with &#10084;&#65039; by Yuvrajjit Baruah using Python, Django 5, JavaScript, HTML/CSS, Gemini, Sarvam, deterministic hybrid ranking, ATS intelligence, Figma-informed UI craft, and a lot of chai &#9749;.</span>
+              <div class="footer-meta" aria-label="Project stack">
+                <span>Django backend</span>
+                <span>Local-first ranking</span>
+                <span>Gemini + Sarvam ready</span>
+                <span>AI ATS analyzer</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="mailto:dev.yuvrajjitbaruah@gmail.com">Feedback or suggestions</a>
+            <a href="{{ linkedin_url }}" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="{{ github_repo }}" target="_blank" rel="noreferrer">GitHub repo</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <dialog id="candidate-dialog">
+      <form method="dialog" class="dialog-shell">
+        <button class="dialog-close" value="close" aria-label="Close candidate details">x</button>
+        <div id="dialog-content"></div>
+      </form>
+    </dialog>
+
+    <script type="module" src="{% static 'recruiter/js/dashboard.js' %}"></script>
+  </body>
+</html>

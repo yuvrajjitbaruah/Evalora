@@ -1,0 +1,17 @@
+team_name: Evalora
+participant_name: Yuvrajjit Baruah
+track: "Track 1 - The Data & AI Challenge"
+challenge: "Intelligent Candidate Discovery"
+project_name: Evalora
+tagline: "Intelligence Behind Every Hire"
+feedback_email: dev.yuvrajjitbaruah@gmail.com
+github_repo: "https://github.com/yuvrajjitbaruah/Evalora"
+linkedin: "https://www.linkedin.com/in/yuvrajjitbaruah"
+sandbox_link: "TO_BE_FILLED_AFTER_DEPLOYMENT"
+ranking_command: "npm run rank"
+submission_file: "outputs/evalora_submission.csv"
+ai_tools_used:
+  - "OpenAI Codex for implementation assistance, documentation drafting, and UI iteration"
+ranking_step_network_access: false
+ranking_step_gpu_required: false
+ranking_step_notes: "Deterministic CPU-only JavaScript ranker. No hosted LLM/API calls are used during ranking."

@@ -1,0 +1,4641 @@
+{
+  "role": {
+    "title": "Senior AI Engineer - Founding Team",
+    "company": "Redrob AI",
+    "anchorDate": "2026-06-01",
+    "idealExperience": [
+      5,
+      9
+    ],
+    "preferredCities": [
+      "pune",
+      "noida",
+      "delhi",
+      "gurgaon",
+      "hyderabad",
+      "mumbai",
+      "bangalore",
+      "bengaluru"
+    ],
+    "mustHaveConcepts": [
+      "production retrieval",
+      "hybrid search",
+      "ranking systems",
+      "embeddings",
+      "vector databases",
+      "evaluation frameworks",
+      "strong python",
+      "product engineering"
+    ]
+  },
+  "generated_at": "2026-06-01T18:34:59.453Z",
+  "candidates": [
+    {
+      "candidate_id": "CAND_0000031",
+      "score": 0.7910339336741101,
+      "reasoning": "Recommendation Systems Engineer with 6 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence; product-company history; evaluation/A-B testing signal. recently active, open to work, response rate 0.91.",
+      "components": {
+        "title": 0.93,
+        "semantic": 0.8214,
+        "skills": 0.4052,
+        "career": 0.8135,
+        "experience": 1,
+        "behavior": 0.7685,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "retrievalRanking",
+          "production",
+          "collaboration",
+          "product",
+          "evaluation"
+        ],
+        "skillHighlights": [
+          "Embeddings",
+          "Pinecone",
+          "Sentence Transformers",
+          "Information Retrieval",
+          "FAISS",
+          "scikit-learn"
+        ],
+        "careerSignals": [
+          "product-company history",
+          "production retrieval/ranking evidence",
+          "ownership language",
+          "short-tenure risk"
+        ],
+        "behaviorSignals": [
+          "recently active",
+          "open to work",
+          "high recruiter response"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 5,
+        "productCompanyRatio": 1
+      },
+      "rank": 1,
+      "candidate": {
+        "candidate_id": "CAND_0000031",
+        "name": "Ela Singh",
+        "title": "Recommendation Systems Engineer",
+        "headline": "Recommendation Systems Engineer | Search, Ranking & Retrieval",
+        "summary": "Machine learning engineer with 6.0 years of experience building ML-powered features in production. Strong background in NLP, recommendation systems, and applied AI; comfortable across the ML stack from feature engineering through deployment. Recently, I led the team that migrated our keyword-search-based product to embedding-based retrieval. I've learned that most retrieval problems are actually evaluation problems in disguise. My academic background is in CS/ML but my main learning has come from shipping real systems and seeing what holds up under production load. Open to senior IC roles in applied ML or AI engineering, ideally at product companies where I'd own a meaningful piece of the ML stack.",
+        "location": "Hyderabad, Telangana",
+        "country": "India",
+        "years": 6,
+        "company": "Swiggy",
+        "industry": "Food Delivery",
+        "skills": [
+          {
+            "name": "Information Retrieval",
+            "proficiency": "expert",
+            "duration_months": 84,
+            "endorsements": 2
+          },
+          {
+            "name": "Embeddings",
+            "proficiency": "expert",
+            "duration_months": 60,
+            "endorsements": 48
+          },
+          {
+            "name": "Sentence Transformers",
+            "proficiency": "expert",
+            "duration_months": 69,
+            "endorsements": 16
+          },
+          {
+            "name": "FAISS",
+            "proficiency": "advanced",
+            "duration_months": 35,
+            "endorsements": 19
+          },
+          {
+            "name": "Pinecone",
+            "proficiency": "expert",
+            "duration_months": 88,
+            "endorsements": 34
+          },
+          {
+            "name": "MLOps",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 15
+          },
+          {
+            "name": "Hugging Face Transformers",
+            "proficiency": "expert",
+            "duration_months": 36,
+            "endorsements": 18
+          },
+          {
+            "name": "MLflow",
+            "proficiency": "advanced",
+            "duration_months": 21,
+            "endorsements": 59
+          },
+          {
+            "name": "BentoML",
+            "proficiency": "intermediate",
+            "duration_months": 14,
+            "endorsements": 6
+          },
+          {
+            "name": "Feature Engineering",
+            "proficiency": "advanced",
+            "duration_months": 26,
+            "endorsements": 38
+          },
+          {
+            "name": "scikit-learn",
+            "proficiency": "advanced",
+            "duration_months": 60,
+            "endorsements": 41
+          },
+          {
+            "name": "Go",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 7
+          }
+        ],
+        "career": [
+          {
+            "company": "Swiggy",
+            "title": "Recommendation Systems Engineer",
+            "industry": "Food Delivery",
+            "duration_months": 14,
+            "is_current": true,
+            "description": "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself."
+          },
+          {
+            "company": "Mad Street Den",
+            "title": "Search Engineer",
+            "industry": "AI/ML",
+            "duration_months": 16,
+            "is_current": false,
+            "description": "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself."
+          },
+          {
+            "company": "Uber",
+            "title": "NLP Engineer",
+            "industry": "Transportation",
+            "duration_months": 27,
+            "is_current": false,
+            "description": "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself."
+          },
+          {
+            "company": "Zomato",
+            "title": "Applied ML Engineer",
+            "industry": "Food Delivery",
+            "duration_months": 13,
+            "is_current": false,
+            "description": "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months. Designed the relevance labeling pipeline (mix of click-through data and explicit human judgments), the feature pipeline, and the training/eval workflow. Most of the work was infrastructure and data quality — the modeling part was almost the easy bit. Final model improved revenue-per-search by 12%."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-05-24",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.91,
+          "avg_response_time_hours": 76.1,
+          "notice_period_days": 60,
+          "github_activity_score": 32.6,
+          "interview_completion_rate": 0.6,
+          "offer_acceptance_rate": 0.38,
+          "saved_by_recruiters_30d": 13,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": true,
+          "verified_email": false,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000031",
+          "score": 0.7910339336741101,
+          "reasoning": "Recommendation Systems Engineer with 6 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence; product-company history; evaluation/A-B testing signal. recently active, open to work, response rate 0.91.",
+          "components": {
+            "title": 0.93,
+            "semantic": 0.8214,
+            "skills": 0.4052,
+            "career": 0.8135,
+            "experience": 1,
+            "behavior": 0.7685,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "retrievalRanking",
+              "production",
+              "collaboration",
+              "product",
+              "evaluation"
+            ],
+            "skillHighlights": [
+              "Embeddings",
+              "Pinecone",
+              "Sentence Transformers",
+              "Information Retrieval",
+              "FAISS",
+              "scikit-learn"
+            ],
+            "careerSignals": [
+              "product-company history",
+              "production retrieval/ranking evidence",
+              "ownership language",
+              "short-tenure risk"
+            ],
+            "behaviorSignals": [
+              "recently active",
+              "open to work",
+              "high recruiter response"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 5,
+            "productCompanyRatio": 1
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000010",
+      "score": 0.4246921230958065,
+      "reasoning": "Data Engineer with 4.6 yrs in London; clear retrieval/ranking evidence; product-company history; evaluation/A-B testing signal. Watch: 120-day notice.",
+      "components": {
+        "title": 0.42,
+        "semantic": 0.3485,
+        "skills": 0.0603,
+        "career": 0.5988,
+        "experience": 0.78,
+        "behavior": 0.5582,
+        "location": 0.24,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "retrievalRanking",
+          "production",
+          "evaluation",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "BM25",
+          "Elasticsearch",
+          "Python",
+          "Kubeflow",
+          "MLOps"
+        ],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "location risk",
+        "aiCoreSkillCount": 3,
+        "productCompanyRatio": 1
+      },
+      "rank": 2,
+      "candidate": {
+        "candidate_id": "CAND_0000010",
+        "name": "Aarav Kapoor",
+        "title": "Data Engineer",
+        "headline": "Data Engineer | Data pipelines & analytics",
+        "summary": "Software / data professional with 4.6 years of experience building data pipelines, backend systems, and analytics infrastructure. Most of my work has been data pipelines and analytics infrastructure; I've shipped a couple of small ML features but it's not the core of my day. My toolkit is solid on the data engineering side — Python, SQL, Spark, Airflow, warehouse design — and I've completed a couple of self-directed ML projects (Kaggle competitions, side projects fine-tuning small models). Interested in transitioning toward more AI/ML-focused work, ideally at a company where I can leverage my existing data-infra skills while learning modern ML practice.",
+        "location": "London",
+        "country": "UK",
+        "years": 4.6,
+        "company": "Ola",
+        "industry": "Transportation",
+        "skills": [
+          {
+            "name": "BM25",
+            "proficiency": "advanced",
+            "duration_months": 55,
+            "endorsements": 55
+          },
+          {
+            "name": "Elasticsearch",
+            "proficiency": "intermediate",
+            "duration_months": 17,
+            "endorsements": 15
+          },
+          {
+            "name": "Python",
+            "proficiency": "intermediate",
+            "duration_months": 14,
+            "endorsements": 7
+          },
+          {
+            "name": "MLOps",
+            "proficiency": "intermediate",
+            "duration_months": 10,
+            "endorsements": 3
+          },
+          {
+            "name": "Kubeflow",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 11
+          },
+          {
+            "name": "GCP",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 7
+          },
+          {
+            "name": "Spring Boot",
+            "proficiency": "beginner",
+            "duration_months": 2,
+            "endorsements": 3
+          },
+          {
+            "name": "Java",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 12
+          },
+          {
+            "name": "GANs",
+            "proficiency": "advanced",
+            "duration_months": 57,
+            "endorsements": 58
+          },
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 4
+          },
+          {
+            "name": "OpenCV",
+            "proficiency": "advanced",
+            "duration_months": 24,
+            "endorsements": 0
+          },
+          {
+            "name": "CNN",
+            "proficiency": "intermediate",
+            "duration_months": 8,
+            "endorsements": 15
+          }
+        ],
+        "career": [
+          {
+            "company": "Ola",
+            "title": "Data Engineer",
+            "industry": "Transportation",
+            "duration_months": 55,
+            "is_current": true,
+            "description": "Mixed data science and analytics-engineering role at a marketing-analytics startup. Spent maybe 30% of my time on lightweight ML (clustering, classification, churn prediction in sklearn/XGBoost) and 70% on data infrastructure and dashboards. Comfortable with the modeling work but I wouldn't call myself an ML specialist. Built our experimentation framework that supports the product team's A/B tests."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-04-29",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.4,
+          "avg_response_time_hours": 19,
+          "notice_period_days": 120,
+          "github_activity_score": 33.7,
+          "interview_completion_rate": 0.53,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 2,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000010",
+          "score": 0.4246921230958065,
+          "reasoning": "Data Engineer with 4.6 yrs in London; clear retrieval/ranking evidence; product-company history; evaluation/A-B testing signal. Watch: 120-day notice.",
+          "components": {
+            "title": 0.42,
+            "semantic": 0.3485,
+            "skills": 0.0603,
+            "career": 0.5988,
+            "experience": 0.78,
+            "behavior": 0.5582,
+            "location": 0.24,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "retrievalRanking",
+              "production",
+              "evaluation",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "BM25",
+              "Elasticsearch",
+              "Python",
+              "Kubeflow",
+              "MLOps"
+            ],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "location risk",
+            "aiCoreSkillCount": 3,
+            "productCompanyRatio": 1
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000043",
+      "score": 0.41883878599674795,
+      "reasoning": "Cloud Engineer with 8.3 yrs in Chandigarh, Chandigarh; clear retrieval/ranking evidence; product-company history. Watch: 120-day notice.",
+      "components": {
+        "title": 0.25,
+        "semantic": 0.3636,
+        "skills": 0.157,
+        "career": 0.4459,
+        "experience": 1,
+        "behavior": 0.3243,
+        "location": 0.76,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "llmDepth",
+          "retrievalRanking",
+          "production"
+        ],
+        "skillHighlights": [
+          "Elasticsearch",
+          "OpenSearch",
+          "Kubeflow",
+          "Fine-tuning LLMs",
+          "PEFT",
+          "Feature Engineering"
+        ],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "India + relocation",
+        "aiCoreSkillCount": 3,
+        "productCompanyRatio": 0.5
+      },
+      "rank": 3,
+      "candidate": {
+        "candidate_id": "CAND_0000043",
+        "name": "Aarav Sen",
+        "title": "Cloud Engineer",
+        "headline": "Cloud Engineer | Full-stack development",
+        "summary": "Software engineer with 8.3 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Chandigarh, Chandigarh",
+        "country": "India",
+        "years": 8.3,
+        "company": "Swiggy",
+        "industry": "Food Delivery",
+        "skills": [
+          {
+            "name": "Elasticsearch",
+            "proficiency": "advanced",
+            "duration_months": 44,
+            "endorsements": 54
+          },
+          {
+            "name": "OpenSearch",
+            "proficiency": "intermediate",
+            "duration_months": 34,
+            "endorsements": 21
+          },
+          {
+            "name": "Fine-tuning LLMs",
+            "proficiency": "intermediate",
+            "duration_months": 14,
+            "endorsements": 8
+          },
+          {
+            "name": "PEFT",
+            "proficiency": "intermediate",
+            "duration_months": 21,
+            "endorsements": 5
+          },
+          {
+            "name": "Kubeflow",
+            "proficiency": "advanced",
+            "duration_months": 55,
+            "endorsements": 12
+          },
+          {
+            "name": "TensorFlow",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 0
+          },
+          {
+            "name": "Feature Engineering",
+            "proficiency": "intermediate",
+            "duration_months": 20,
+            "endorsements": 0
+          },
+          {
+            "name": "Airflow",
+            "proficiency": "beginner",
+            "duration_months": 2,
+            "endorsements": 5
+          },
+          {
+            "name": "Haystack",
+            "proficiency": "advanced",
+            "duration_months": 27,
+            "endorsements": 11
+          },
+          {
+            "name": "OpenCV",
+            "proficiency": "advanced",
+            "duration_months": 33,
+            "endorsements": 54
+          },
+          {
+            "name": "LangChain",
+            "proficiency": "intermediate",
+            "duration_months": 25,
+            "endorsements": 37
+          },
+          {
+            "name": "Weights & Biases",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 4
+          }
+        ],
+        "career": [
+          {
+            "company": "Swiggy",
+            "title": "Cloud Engineer",
+            "industry": "Food Delivery",
+            "duration_months": 30,
+            "is_current": true,
+            "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering."
+          },
+          {
+            "company": "HCL",
+            "title": ".NET Developer",
+            "industry": "IT Services",
+            "duration_months": 24,
+            "is_current": false,
+            "description": "Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service deployments, and the Kubernetes cluster operations. Designed the CI/CD pipelines (GitLab CI + ArgoCD) and the monitoring stack (Prometheus, Grafana, Loki). Strong on the infra and ops side; haven't done much application development."
+          },
+          {
+            "company": "Mindtree",
+            "title": "Frontend Engineer",
+            "industry": "IT Services",
+            "duration_months": 25,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Initech",
+            "title": "DevOps Engineer",
+            "industry": "Software",
+            "duration_months": 20,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-01-01",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.04,
+          "avg_response_time_hours": 223.5,
+          "notice_period_days": 120,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.72,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 2,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000043",
+          "score": 0.41883878599674795,
+          "reasoning": "Cloud Engineer with 8.3 yrs in Chandigarh, Chandigarh; clear retrieval/ranking evidence; product-company history. Watch: 120-day notice.",
+          "components": {
+            "title": 0.25,
+            "semantic": 0.3636,
+            "skills": 0.157,
+            "career": 0.4459,
+            "experience": 1,
+            "behavior": 0.3243,
+            "location": 0.76,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "llmDepth",
+              "retrievalRanking",
+              "production"
+            ],
+            "skillHighlights": [
+              "Elasticsearch",
+              "OpenSearch",
+              "Kubeflow",
+              "Fine-tuning LLMs",
+              "PEFT",
+              "Feature Engineering"
+            ],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "India + relocation",
+            "aiCoreSkillCount": 3,
+            "productCompanyRatio": 0.5
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000014",
+      "score": 0.40509926895385323,
+      "reasoning": "Frontend Engineer with 8.4 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence. response rate 0.80.",
+      "components": {
+        "title": 0.1018,
+        "semantic": 0.2905,
+        "skills": 0.0444,
+        "career": 0.3925,
+        "experience": 1,
+        "behavior": 0.6115,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "retrievalRanking",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "FAISS",
+          "OpenSearch"
+        ],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "high recruiter response"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 2,
+        "productCompanyRatio": 0.3333
+      },
+      "rank": 4,
+      "candidate": {
+        "candidate_id": "CAND_0000014",
+        "name": "Atharv Joshi",
+        "title": "Frontend Engineer",
+        "headline": "Frontend Engineer | Full-stack development",
+        "summary": "Software engineer with 8.4 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. My background is full-stack, but my comfort zone is the backend and the database. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Hyderabad, Telangana",
+        "country": "India",
+        "years": 8.4,
+        "company": "Zomato",
+        "industry": "Food Delivery",
+        "skills": [
+          {
+            "name": "FAISS",
+            "proficiency": "advanced",
+            "duration_months": 44,
+            "endorsements": 40
+          },
+          {
+            "name": "OpenSearch",
+            "proficiency": "advanced",
+            "duration_months": 59,
+            "endorsements": 47
+          },
+          {
+            "name": "BigQuery",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 6
+          },
+          {
+            "name": "React",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 11
+          },
+          {
+            "name": "OpenCV",
+            "proficiency": "advanced",
+            "duration_months": 60,
+            "endorsements": 30
+          },
+          {
+            "name": "YOLO",
+            "proficiency": "advanced",
+            "duration_months": 44,
+            "endorsements": 1
+          },
+          {
+            "name": "SAP",
+            "proficiency": "intermediate",
+            "duration_months": 30,
+            "endorsements": 5
+          },
+          {
+            "name": "SEO",
+            "proficiency": "beginner",
+            "duration_months": 12,
+            "endorsements": 0
+          },
+          {
+            "name": "REST APIs",
+            "proficiency": "beginner",
+            "duration_months": 4,
+            "endorsements": 3
+          },
+          {
+            "name": "GANs",
+            "proficiency": "advanced",
+            "duration_months": 33,
+            "endorsements": 9
+          },
+          {
+            "name": "dbt",
+            "proficiency": "beginner",
+            "duration_months": 13,
+            "endorsements": 0
+          },
+          {
+            "name": "Photoshop",
+            "proficiency": "intermediate",
+            "duration_months": 32,
+            "endorsements": 1
+          }
+        ],
+        "career": [
+          {
+            "company": "Zomato",
+            "title": "Frontend Engineer",
+            "industry": "Food Delivery",
+            "duration_months": 33,
+            "is_current": true,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          },
+          {
+            "company": "Dunder Mifflin",
+            "title": "Software Engineer",
+            "industry": "Paper Products",
+            "duration_months": 48,
+            "is_current": false,
+            "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering."
+          },
+          {
+            "company": "Acme Corp",
+            "title": "Java Developer",
+            "industry": "Manufacturing",
+            "duration_months": 19,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-04-12",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.8,
+          "avg_response_time_hours": 7.7,
+          "notice_period_days": 90,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.55,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 0,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000014",
+          "score": 0.40509926895385323,
+          "reasoning": "Frontend Engineer with 8.4 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence. response rate 0.80.",
+          "components": {
+            "title": 0.1018,
+            "semantic": 0.2905,
+            "skills": 0.0444,
+            "career": 0.3925,
+            "experience": 1,
+            "behavior": 0.6115,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "retrievalRanking",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "FAISS",
+              "OpenSearch"
+            ],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "high recruiter response"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 2,
+            "productCompanyRatio": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000038",
+      "score": 0.38995891083689804,
+      "reasoning": "Java Developer with 6.7 yrs in Coimbatore, Tamil Nadu; clear retrieval/ranking evidence; product-company history. open to work.",
+      "components": {
+        "title": 0.1018,
+        "semantic": 0.1533,
+        "skills": 0.0861,
+        "career": 0.5391,
+        "experience": 1,
+        "behavior": 0.5865,
+        "location": 0.82,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "retrievalRanking",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "Weaviate",
+          "MLOps",
+          "Kubeflow",
+          "Docker"
+        ],
+        "careerSignals": [
+          "product-company history",
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India + relocation",
+        "aiCoreSkillCount": 1,
+        "productCompanyRatio": 0.6667
+      },
+      "rank": 5,
+      "candidate": {
+        "candidate_id": "CAND_0000038",
+        "name": "Myra Trivedi",
+        "title": "Java Developer",
+        "headline": "Java Developer | Cloud & DevOps",
+        "summary": "Software engineer with 6.7 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. My background is full-stack, but my comfort zone is the backend and the database. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Coimbatore, Tamil Nadu",
+        "country": "India",
+        "years": 6.7,
+        "company": "Swiggy",
+        "industry": "Food Delivery",
+        "skills": [
+          {
+            "name": "Weaviate",
+            "proficiency": "advanced",
+            "duration_months": 27,
+            "endorsements": 37
+          },
+          {
+            "name": "MLOps",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 13
+          },
+          {
+            "name": "Kubeflow",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 3
+          },
+          {
+            "name": "Docker",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 12
+          },
+          {
+            "name": "Django",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 2
+          },
+          {
+            "name": "Redux",
+            "proficiency": "intermediate",
+            "duration_months": 13,
+            "endorsements": 3
+          },
+          {
+            "name": "PowerPoint",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 15
+          },
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 9
+          },
+          {
+            "name": "GraphQL",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 13
+          },
+          {
+            "name": "Agile",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 14
+          },
+          {
+            "name": "Azure",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 14
+          }
+        ],
+        "career": [
+          {
+            "company": "Swiggy",
+            "title": "Java Developer",
+            "industry": "Food Delivery",
+            "duration_months": 31,
+            "is_current": true,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          },
+          {
+            "company": "Globex Inc",
+            "title": ".NET Developer",
+            "industry": "Manufacturing",
+            "duration_months": 14,
+            "is_current": false,
+            "description": "Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks."
+          },
+          {
+            "company": "Hooli",
+            "title": "DevOps Engineer",
+            "industry": "Software",
+            "duration_months": 34,
+            "is_current": false,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-03-31",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.2,
+          "avg_response_time_hours": 61,
+          "notice_period_days": 90,
+          "github_activity_score": 37.8,
+          "interview_completion_rate": 0.75,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 18,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000038",
+          "score": 0.38995891083689804,
+          "reasoning": "Java Developer with 6.7 yrs in Coimbatore, Tamil Nadu; clear retrieval/ranking evidence; product-company history. open to work.",
+          "components": {
+            "title": 0.1018,
+            "semantic": 0.1533,
+            "skills": 0.0861,
+            "career": 0.5391,
+            "experience": 1,
+            "behavior": 0.5865,
+            "location": 0.82,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "retrievalRanking",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "Weaviate",
+              "MLOps",
+              "Kubeflow",
+              "Docker"
+            ],
+            "careerSignals": [
+              "product-company history",
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India + relocation",
+            "aiCoreSkillCount": 1,
+            "productCompanyRatio": 0.6667
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000015",
+      "score": 0.38735531703773657,
+      "reasoning": "Software Engineer with 5.4 yrs in Trivandrum, Kerala; clear retrieval/ranking evidence; product-company history. open to work.",
+      "components": {
+        "title": 0.25,
+        "semantic": 0.2306,
+        "skills": 0,
+        "career": 0.4992,
+        "experience": 1,
+        "behavior": 0.5341,
+        "location": 0.58,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "retrievalRanking",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "Qdrant",
+          "PyTorch"
+        ],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 1,
+        "productCompanyRatio": 0.6667
+      },
+      "rank": 6,
+      "candidate": {
+        "candidate_id": "CAND_0000015",
+        "name": "Rahul Agarwal",
+        "title": "Software Engineer",
+        "headline": "Software Engineer | Cloud & DevOps",
+        "summary": "Software engineer with 5.4 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Trivandrum, Kerala",
+        "country": "India",
+        "years": 5.4,
+        "company": "Razorpay",
+        "industry": "Fintech",
+        "skills": [
+          {
+            "name": "Qdrant",
+            "proficiency": "intermediate",
+            "duration_months": 9,
+            "endorsements": 13
+          },
+          {
+            "name": "PyTorch",
+            "proficiency": "intermediate",
+            "duration_months": 15,
+            "endorsements": 10
+          },
+          {
+            "name": "Content Writing",
+            "proficiency": "intermediate",
+            "duration_months": 31,
+            "endorsements": 8
+          },
+          {
+            "name": "Weights & Biases",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 5
+          },
+          {
+            "name": "Sales",
+            "proficiency": "intermediate",
+            "duration_months": 30,
+            "endorsements": 13
+          },
+          {
+            "name": "Figma",
+            "proficiency": "intermediate",
+            "duration_months": 29,
+            "endorsements": 9
+          },
+          {
+            "name": "BigQuery",
+            "proficiency": "beginner",
+            "duration_months": 7,
+            "endorsements": 0
+          },
+          {
+            "name": "Computer Vision",
+            "proficiency": "intermediate",
+            "duration_months": 20,
+            "endorsements": 6
+          },
+          {
+            "name": "Next.js",
+            "proficiency": "intermediate",
+            "duration_months": 35,
+            "endorsements": 12
+          },
+          {
+            "name": "SEO",
+            "proficiency": "intermediate",
+            "duration_months": 29,
+            "endorsements": 10
+          }
+        ],
+        "career": [
+          {
+            "company": "Razorpay",
+            "title": "Software Engineer",
+            "industry": "Fintech",
+            "duration_months": 31,
+            "is_current": true,
+            "description": "Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service deployments, and the Kubernetes cluster operations. Designed the CI/CD pipelines (GitLab CI + ArgoCD) and the monitoring stack (Prometheus, Grafana, Loki). Strong on the infra and ops side; haven't done much application development."
+          },
+          {
+            "company": "Hooli",
+            "title": "Mobile Developer",
+            "industry": "Software",
+            "duration_months": 24,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Globex Inc",
+            "title": "DevOps Engineer",
+            "industry": "Manufacturing",
+            "duration_months": 9,
+            "is_current": false,
+            "description": "Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-02-12",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.32,
+          "avg_response_time_hours": 117.7,
+          "notice_period_days": 90,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.72,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 8,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000015",
+          "score": 0.38735531703773657,
+          "reasoning": "Software Engineer with 5.4 yrs in Trivandrum, Kerala; clear retrieval/ranking evidence; product-company history. open to work.",
+          "components": {
+            "title": 0.25,
+            "semantic": 0.2306,
+            "skills": 0,
+            "career": 0.4992,
+            "experience": 1,
+            "behavior": 0.5341,
+            "location": 0.58,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "retrievalRanking",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "Qdrant",
+              "PyTorch"
+            ],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 1,
+            "productCompanyRatio": 0.6667
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000001",
+      "score": 0.3592108515374415,
+      "reasoning": "Backend Engineer with 6.9 yrs in Toronto; clear retrieval/ranking evidence. recently active, open to work.",
+      "components": {
+        "title": 0.42,
+        "semantic": 0.1716,
+        "skills": 0.0767,
+        "career": 0.1359,
+        "experience": 1,
+        "behavior": 0.6972,
+        "location": 0.24,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "llmDepth",
+          "retrievalRanking",
+          "collaboration"
+        ],
+        "skillHighlights": [
+          "Milvus",
+          "NLP",
+          "Fine-tuning LLMs",
+          "LoRA",
+          "BentoML"
+        ],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "recently active",
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "location risk",
+        "aiCoreSkillCount": 3,
+        "productCompanyRatio": 0
+      },
+      "rank": 7,
+      "candidate": {
+        "candidate_id": "CAND_0000001",
+        "name": "Ira Vora",
+        "title": "Backend Engineer",
+        "headline": "Backend Engineer | SQL, Spark, Cloud",
+        "summary": "Software / data professional with 6.9 years of experience building data pipelines, backend systems, and analytics infrastructure. I'm a backend/data hybrid — Spark, Airflow, SQL warehouses are home territory; I'm building competence on the ML side. My toolkit is solid on the data engineering side — Python, SQL, Spark, Airflow, warehouse design — and I've completed a couple of self-directed ML projects (Kaggle competitions, side projects fine-tuning small models). Interested in transitioning toward more AI/ML-focused work, ideally at a company where I can leverage my existing data-infra skills while learning modern ML practice.",
+        "location": "Toronto",
+        "country": "Canada",
+        "years": 6.9,
+        "company": "Mindtree",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Milvus",
+            "proficiency": "advanced",
+            "duration_months": 35,
+            "endorsements": 40
+          },
+          {
+            "name": "NLP",
+            "proficiency": "advanced",
+            "duration_months": 26,
+            "endorsements": 37
+          },
+          {
+            "name": "Fine-tuning LLMs",
+            "proficiency": "advanced",
+            "duration_months": 36,
+            "endorsements": 21
+          },
+          {
+            "name": "LoRA",
+            "proficiency": "intermediate",
+            "duration_months": 28,
+            "endorsements": 0
+          },
+          {
+            "name": "BentoML",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 3
+          },
+          {
+            "name": "Tailwind",
+            "proficiency": "intermediate",
+            "duration_months": 13,
+            "endorsements": 3
+          },
+          {
+            "name": "Image Classification",
+            "proficiency": "advanced",
+            "duration_months": 40,
+            "endorsements": 7
+          },
+          {
+            "name": "Weights & Biases",
+            "proficiency": "intermediate",
+            "duration_months": 30,
+            "endorsements": 13
+          },
+          {
+            "name": "Speech Recognition",
+            "proficiency": "advanced",
+            "duration_months": 33,
+            "endorsements": 52
+          },
+          {
+            "name": "Photoshop",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 8
+          },
+          {
+            "name": "TTS",
+            "proficiency": "advanced",
+            "duration_months": 60,
+            "endorsements": 56
+          },
+          {
+            "name": "Apache Beam",
+            "proficiency": "intermediate",
+            "duration_months": 9,
+            "endorsements": 4
+          }
+        ],
+        "career": [
+          {
+            "company": "Mindtree",
+            "title": "Backend Engineer",
+            "industry": "IT Services",
+            "duration_months": 27,
+            "is_current": true,
+            "description": "Implemented streaming data pipelines on Kafka and Spark Streaming for a real-time user-activity processing platform. Designed the schema-registry integration, the watermark/state management approach, and the deduplication logic for late-arriving events. Worked closely with the data science team to make sure feature pipelines aligned with what their models needed. Most of my career has been data engineering, with some adjacent ML exposure."
+          },
+          {
+            "company": "Dunder Mifflin",
+            "title": "Analytics Engineer",
+            "industry": "Paper Products",
+            "duration_months": 55,
+            "is_current": false,
+            "description": "Built and maintained data pipelines on Apache Airflow processing ~500GB of daily transactional data across 12 source systems. Worked extensively with Spark (PySpark) for batch processing and dbt for the transformation/modeling layer in our Snowflake warehouse. Owned the on-call rotation for data quality issues — wrote most of the data quality checks that detect schema drift and unusual volume changes. The pipeline supports the analytics team and a few internal ML models."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-05-20",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.34,
+          "avg_response_time_hours": 177.8,
+          "notice_period_days": 60,
+          "github_activity_score": 9.2,
+          "interview_completion_rate": 0.71,
+          "offer_acceptance_rate": 0.58,
+          "saved_by_recruiters_30d": 4,
+          "preferred_work_mode": "onsite",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000001",
+          "score": 0.3592108515374415,
+          "reasoning": "Backend Engineer with 6.9 yrs in Toronto; clear retrieval/ranking evidence. recently active, open to work.",
+          "components": {
+            "title": 0.42,
+            "semantic": 0.1716,
+            "skills": 0.0767,
+            "career": 0.1359,
+            "experience": 1,
+            "behavior": 0.6972,
+            "location": 0.24,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "llmDepth",
+              "retrievalRanking",
+              "collaboration"
+            ],
+            "skillHighlights": [
+              "Milvus",
+              "NLP",
+              "Fine-tuning LLMs",
+              "LoRA",
+              "BentoML"
+            ],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "recently active",
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "location risk",
+            "aiCoreSkillCount": 3,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000007",
+      "score": 0.3530868706627905,
+      "reasoning": "Civil Engineer with 5.5 yrs in Gurgaon, Haryana; Spark skills; product-company history. recently active, 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.105,
+        "skills": 0.007,
+        "career": 0.3058,
+        "experience": 1,
+        "behavior": 0.7226,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production"
+        ],
+        "skillHighlights": [
+          "Spark"
+        ],
+        "careerSignals": [
+          "product-company history",
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "recently active",
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.5
+      },
+      "rank": 8,
+      "candidate": {
+        "candidate_id": "CAND_0000007",
+        "name": "Vihaan Bose",
+        "title": "Civil Engineer",
+        "headline": "Civil Engineer | 5.5+ yrs experience",
+        "summary": "Professional with 5.5+ years of experience. My professional background is in marketing manager — I've built and led teams, owned KPIs, and driven business outcomes in this domain. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Gurgaon, Haryana",
+        "country": "India",
+        "years": 5.5,
+        "company": "Wipro",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Spark",
+            "proficiency": "beginner",
+            "duration_months": 14,
+            "endorsements": 14
+          },
+          {
+            "name": "Content Writing",
+            "proficiency": "beginner",
+            "duration_months": 14,
+            "endorsements": 12
+          },
+          {
+            "name": "MongoDB",
+            "proficiency": "intermediate",
+            "duration_months": 9,
+            "endorsements": 13
+          },
+          {
+            "name": "Sales",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 0
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 4
+          },
+          {
+            "name": "Apache Beam",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 4
+          },
+          {
+            "name": "Illustrator",
+            "proficiency": "beginner",
+            "duration_months": 2,
+            "endorsements": 14
+          }
+        ],
+        "career": [
+          {
+            "company": "Wipro",
+            "title": "Civil Engineer",
+            "industry": "IT Services",
+            "duration_months": 38,
+            "is_current": true,
+            "description": "Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design."
+          },
+          {
+            "company": "Initech",
+            "title": "Mechanical Engineer",
+            "industry": "Software",
+            "duration_months": 27,
+            "is_current": false,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-05-25",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.62,
+          "avg_response_time_hours": 61.3,
+          "notice_period_days": 30,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.47,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 8,
+          "preferred_work_mode": "onsite",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000007",
+          "score": 0.3530868706627905,
+          "reasoning": "Civil Engineer with 5.5 yrs in Gurgaon, Haryana; Spark skills; product-company history. recently active, 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.105,
+            "skills": 0.007,
+            "career": 0.3058,
+            "experience": 1,
+            "behavior": 0.7226,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production"
+            ],
+            "skillHighlights": [
+              "Spark"
+            ],
+            "careerSignals": [
+              "product-company history",
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "recently active",
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.5
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000048",
+      "score": 0.3486346822091622,
+      "reasoning": "Mobile Developer with 9.7 yrs in Hyderabad, Telangana; product-company history. open to work. Watch: 120-day notice.",
+      "components": {
+        "title": 0.1018,
+        "semantic": 0.171,
+        "skills": 0,
+        "career": 0.4459,
+        "experience": 0.72,
+        "behavior": 0.5913,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.5
+      },
+      "rank": 9,
+      "candidate": {
+        "candidate_id": "CAND_0000048",
+        "name": "Vihaan Saxena",
+        "title": "Mobile Developer",
+        "headline": "Mobile Developer | Full-stack development",
+        "summary": "Software engineer with 9.7 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Hyderabad, Telangana",
+        "country": "India",
+        "years": 9.7,
+        "company": "CRED",
+        "industry": "Fintech",
+        "skills": [
+          {
+            "name": "Hadoop",
+            "proficiency": "beginner",
+            "duration_months": 15,
+            "endorsements": 2
+          },
+          {
+            "name": "Terraform",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 13
+          },
+          {
+            "name": "Vue.js",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 2
+          },
+          {
+            "name": "Content Writing",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 11
+          },
+          {
+            "name": "AWS",
+            "proficiency": "intermediate",
+            "duration_months": 31,
+            "endorsements": 1
+          }
+        ],
+        "career": [
+          {
+            "company": "CRED",
+            "title": "Mobile Developer",
+            "industry": "Fintech",
+            "duration_months": 28,
+            "is_current": true,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          },
+          {
+            "company": "Cognizant",
+            "title": "Full Stack Developer",
+            "industry": "IT Services",
+            "duration_months": 20,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Stark Industries",
+            "title": "Mobile Developer",
+            "industry": "Manufacturing",
+            "duration_months": 51,
+            "is_current": false,
+            "description": "Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks."
+          },
+          {
+            "company": "Initech",
+            "title": "Full Stack Developer",
+            "industry": "Software",
+            "duration_months": 15,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-04-06",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.65,
+          "avg_response_time_hours": 97.9,
+          "notice_period_days": 120,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.42,
+          "offer_acceptance_rate": 0.4,
+          "saved_by_recruiters_30d": 5,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": false,
+          "verified_email": false,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000048",
+          "score": 0.3486346822091622,
+          "reasoning": "Mobile Developer with 9.7 yrs in Hyderabad, Telangana; product-company history. open to work. Watch: 120-day notice.",
+          "components": {
+            "title": 0.1018,
+            "semantic": 0.171,
+            "skills": 0,
+            "career": 0.4459,
+            "experience": 0.72,
+            "behavior": 0.5913,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.5
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000046",
+      "score": 0.3393319724068576,
+      "reasoning": "Mechanical Engineer with 7.8 yrs in London; product-company history. 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.12,
+        "skills": 0,
+        "career": 0.6421,
+        "experience": 1,
+        "behavior": 0.4801,
+        "location": 0.42,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "product-company history",
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "relocation possible",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 1
+      },
+      "rank": 10,
+      "candidate": {
+        "candidate_id": "CAND_0000046",
+        "name": "Dev Nair",
+        "title": "Mechanical Engineer",
+        "headline": "Mechanical Engineer | 7.8+ yrs experience",
+        "summary": "Professional with 7.8+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "London",
+        "country": "UK",
+        "years": 7.8,
+        "company": "Hooli",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Agile",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 1
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "intermediate",
+            "duration_months": 28,
+            "endorsements": 11
+          },
+          {
+            "name": "SAP",
+            "proficiency": "intermediate",
+            "duration_months": 35,
+            "endorsements": 6
+          },
+          {
+            "name": "React",
+            "proficiency": "beginner",
+            "duration_months": 7,
+            "endorsements": 7
+          },
+          {
+            "name": "Azure",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 3
+          },
+          {
+            "name": "ETL",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 2
+          }
+        ],
+        "career": [
+          {
+            "company": "Hooli",
+            "title": "Mechanical Engineer",
+            "industry": "Software",
+            "duration_months": 30,
+            "is_current": true,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          },
+          {
+            "company": "Pied Piper",
+            "title": "HR Manager",
+            "industry": "Software",
+            "duration_months": 33,
+            "is_current": false,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          },
+          {
+            "company": "Hooli",
+            "title": "Marketing Manager",
+            "industry": "Software",
+            "duration_months": 30,
+            "is_current": false,
+            "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-02-20",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.41,
+          "avg_response_time_hours": 209.8,
+          "notice_period_days": 30,
+          "github_activity_score": 20.9,
+          "interview_completion_rate": 0.4,
+          "offer_acceptance_rate": 0.34,
+          "saved_by_recruiters_30d": 7,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000046",
+          "score": 0.3393319724068576,
+          "reasoning": "Mechanical Engineer with 7.8 yrs in London; product-company history. 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.12,
+            "skills": 0,
+            "career": 0.6421,
+            "experience": 1,
+            "behavior": 0.4801,
+            "location": 0.42,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "product-company history",
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "relocation possible",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 1
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000016",
+      "score": 0.33751207119579774,
+      "reasoning": "Accountant with 5.3 yrs in Gurgaon, Haryana; Kubeflow, SQL, Data Pipelines skills. open to work.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.22,
+        "skills": 0.0265,
+        "career": 0.1458,
+        "experience": 1,
+        "behavior": 0.5672,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [
+          "Kubeflow",
+          "SQL",
+          "Data Pipelines"
+        ],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0
+      },
+      "rank": 11,
+      "candidate": {
+        "candidate_id": "CAND_0000016",
+        "name": "Aanya Malhotra",
+        "title": "Accountant",
+        "headline": "Accountant | Helping teams scale",
+        "summary": "Professional with 5.3+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Gurgaon, Haryana",
+        "country": "India",
+        "years": 5.3,
+        "company": "Infosys",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Kubeflow",
+            "proficiency": "advanced",
+            "duration_months": 54,
+            "endorsements": 2
+          },
+          {
+            "name": "Data Pipelines",
+            "proficiency": "beginner",
+            "duration_months": 7,
+            "endorsements": 2
+          },
+          {
+            "name": "SQL",
+            "proficiency": "intermediate",
+            "duration_months": 16,
+            "endorsements": 14
+          },
+          {
+            "name": "Node.js",
+            "proficiency": "beginner",
+            "duration_months": 11,
+            "endorsements": 4
+          },
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 6,
+            "endorsements": 12
+          },
+          {
+            "name": "Go",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 0
+          },
+          {
+            "name": "Photoshop",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 10
+          },
+          {
+            "name": "Accounting",
+            "proficiency": "intermediate",
+            "duration_months": 31,
+            "endorsements": 4
+          }
+        ],
+        "career": [
+          {
+            "company": "Infosys",
+            "title": "Accountant",
+            "industry": "IT Services",
+            "duration_months": 18,
+            "is_current": true,
+            "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders."
+          },
+          {
+            "company": "TCS",
+            "title": "Mechanical Engineer",
+            "industry": "IT Services",
+            "duration_months": 39,
+            "is_current": false,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          },
+          {
+            "company": "Globex Inc",
+            "title": "Operations Manager",
+            "industry": "Manufacturing",
+            "duration_months": 6,
+            "is_current": false,
+            "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-12-21",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.64,
+          "avg_response_time_hours": 205.6,
+          "notice_period_days": 60,
+          "github_activity_score": 42.9,
+          "interview_completion_rate": 0.66,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 5,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": false,
+          "verified_email": false,
+          "verified_phone": false,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000016",
+          "score": 0.33751207119579774,
+          "reasoning": "Accountant with 5.3 yrs in Gurgaon, Haryana; Kubeflow, SQL, Data Pipelines skills. open to work.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.22,
+            "skills": 0.0265,
+            "career": 0.1458,
+            "experience": 1,
+            "behavior": 0.5672,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [
+              "Kubeflow",
+              "SQL",
+              "Data Pipelines"
+            ],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000026",
+      "score": 0.33509609902731846,
+      "reasoning": "Graphic Designer with 6.8 yrs in Kochi, Kerala; Kubeflow, Kubernetes, Airflow skills. 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.0662,
+        "skills": 0.0392,
+        "career": 0.5099,
+        "experience": 1,
+        "behavior": 0.5382,
+        "location": 0.64,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production"
+        ],
+        "skillHighlights": [
+          "Kubeflow",
+          "Kubernetes",
+          "Airflow",
+          "Docker"
+        ],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.3333
+      },
+      "rank": 12,
+      "candidate": {
+        "candidate_id": "CAND_0000026",
+        "name": "Neha Rao",
+        "title": "Graphic Designer",
+        "headline": "Graphic Designer | 6.8+ yrs experience",
+        "summary": "Professional with 6.8+ years of experience. My professional background is in marketing manager — I've built and led teams, owned KPIs, and driven business outcomes in this domain. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Kochi, Kerala",
+        "country": "India",
+        "years": 6.8,
+        "company": "Initech",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Kubeflow",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 14
+          },
+          {
+            "name": "Docker",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 4
+          },
+          {
+            "name": "Airflow",
+            "proficiency": "intermediate",
+            "duration_months": 21,
+            "endorsements": 7
+          },
+          {
+            "name": "Kubernetes",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 13
+          },
+          {
+            "name": "Apache Beam",
+            "proficiency": "intermediate",
+            "duration_months": 18,
+            "endorsements": 4
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 12
+          },
+          {
+            "name": "ETL",
+            "proficiency": "beginner",
+            "duration_months": 17,
+            "endorsements": 15
+          },
+          {
+            "name": "Django",
+            "proficiency": "beginner",
+            "duration_months": 11,
+            "endorsements": 6
+          }
+        ],
+        "career": [
+          {
+            "company": "Initech",
+            "title": "Graphic Designer",
+            "industry": "Software",
+            "duration_months": 43,
+            "is_current": true,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          },
+          {
+            "company": "Acme Corp",
+            "title": "Accountant",
+            "industry": "Manufacturing",
+            "duration_months": 20,
+            "is_current": false,
+            "description": "Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality."
+          },
+          {
+            "company": "Acme Corp",
+            "title": "Project Manager",
+            "industry": "Manufacturing",
+            "duration_months": 17,
+            "is_current": false,
+            "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-10-03",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.59,
+          "avg_response_time_hours": 45.4,
+          "notice_period_days": 30,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.49,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 11,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": false,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000026",
+          "score": 0.33509609902731846,
+          "reasoning": "Graphic Designer with 6.8 yrs in Kochi, Kerala; Kubeflow, Kubernetes, Airflow skills. 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.0662,
+            "skills": 0.0392,
+            "career": 0.5099,
+            "experience": 1,
+            "behavior": 0.5382,
+            "location": 0.64,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production"
+            ],
+            "skillHighlights": [
+              "Kubeflow",
+              "Kubernetes",
+              "Airflow",
+              "Docker"
+            ],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000019",
+      "score": 0.3250665965159519,
+      "reasoning": "Project Manager with 6.5 yrs in Trivandrum, Kerala; adjacent ML/product signals. recently active.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.2459,
+        "skills": 0,
+        "career": 0.195,
+        "experience": 1,
+        "behavior": 0.5716,
+        "location": 0.64,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "recently active"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.3333
+      },
+      "rank": 13,
+      "candidate": {
+        "candidate_id": "CAND_0000019",
+        "name": "Myra Mishra",
+        "title": "Project Manager",
+        "headline": "Project Manager | 6.5+ yrs experience",
+        "summary": "Professional with 6.5+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Trivandrum, Kerala",
+        "country": "India",
+        "years": 6.5,
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "skills": [
+          {
+            "name": "Figma",
+            "proficiency": "intermediate",
+            "duration_months": 34,
+            "endorsements": 13
+          },
+          {
+            "name": "GraphQL",
+            "proficiency": "beginner",
+            "duration_months": 12,
+            "endorsements": 4
+          },
+          {
+            "name": "Six Sigma",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 4
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "beginner",
+            "duration_months": 2,
+            "endorsements": 15
+          },
+          {
+            "name": "YOLO",
+            "proficiency": "intermediate",
+            "duration_months": 34,
+            "endorsements": 10
+          },
+          {
+            "name": "gRPC",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 12
+          },
+          {
+            "name": "AWS",
+            "proficiency": "intermediate",
+            "duration_months": 28,
+            "endorsements": 11
+          },
+          {
+            "name": "Azure",
+            "proficiency": "intermediate",
+            "duration_months": 21,
+            "endorsements": 6
+          }
+        ],
+        "career": [
+          {
+            "company": "Wayne Enterprises",
+            "title": "Project Manager",
+            "industry": "Conglomerate",
+            "duration_months": 44,
+            "is_current": true,
+            "description": "Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited."
+          },
+          {
+            "company": "Wayne Enterprises",
+            "title": "Marketing Manager",
+            "industry": "Conglomerate",
+            "duration_months": 26,
+            "is_current": false,
+            "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up."
+          },
+          {
+            "company": "Pied Piper",
+            "title": "Business Analyst",
+            "industry": "Software",
+            "duration_months": 7,
+            "is_current": false,
+            "description": "Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-05-21",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.34,
+          "avg_response_time_hours": 100,
+          "notice_period_days": 60,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.31,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 0,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": false,
+          "verified_email": false,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000019",
+          "score": 0.3250665965159519,
+          "reasoning": "Project Manager with 6.5 yrs in Trivandrum, Kerala; adjacent ML/product signals. recently active.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.2459,
+            "skills": 0,
+            "career": 0.195,
+            "experience": 1,
+            "behavior": 0.5716,
+            "location": 0.64,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "recently active"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000041",
+      "score": 0.32291659511704157,
+      "reasoning": "Operations Manager with 13.7 yrs in Delhi, Delhi; Airflow, SQL, Kubernetes skills. open to work.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.2521,
+        "skills": 0.019,
+        "career": 0.414,
+        "experience": 0.44,
+        "behavior": 0.5317,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [
+          "Airflow",
+          "SQL",
+          "Kubernetes"
+        ],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.2
+      },
+      "rank": 14,
+      "candidate": {
+        "candidate_id": "CAND_0000041",
+        "name": "Anjali Khanna",
+        "title": "Operations Manager",
+        "headline": "Operations Manager | Helping teams scale",
+        "summary": "Professional with 13.7+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Delhi, Delhi",
+        "country": "India",
+        "years": 13.7,
+        "company": "Hooli",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Airflow",
+            "proficiency": "intermediate",
+            "duration_months": 20,
+            "endorsements": 13
+          },
+          {
+            "name": "Kubernetes",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 5
+          },
+          {
+            "name": "SQL",
+            "proficiency": "intermediate",
+            "duration_months": 12,
+            "endorsements": 12
+          },
+          {
+            "name": "Go",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 13
+          },
+          {
+            "name": "GCP",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 0
+          },
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 16,
+            "endorsements": 14
+          },
+          {
+            "name": "React",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 15
+          },
+          {
+            "name": "Webpack",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 3
+          },
+          {
+            "name": "Angular",
+            "proficiency": "intermediate",
+            "duration_months": 31,
+            "endorsements": 2
+          }
+        ],
+        "career": [
+          {
+            "company": "Hooli",
+            "title": "Operations Manager",
+            "industry": "Software",
+            "duration_months": 42,
+            "is_current": true,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          },
+          {
+            "company": "Acme Corp",
+            "title": "Business Analyst",
+            "industry": "Manufacturing",
+            "duration_months": 21,
+            "is_current": false,
+            "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up."
+          },
+          {
+            "company": "Wayne Enterprises",
+            "title": "Content Writer",
+            "industry": "Conglomerate",
+            "duration_months": 24,
+            "is_current": false,
+            "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months."
+          },
+          {
+            "company": "Infosys",
+            "title": "Content Writer",
+            "industry": "IT Services",
+            "duration_months": 52,
+            "is_current": false,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-03-16",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.07,
+          "avg_response_time_hours": 135.3,
+          "notice_period_days": 90,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.85,
+          "offer_acceptance_rate": 0.16,
+          "saved_by_recruiters_30d": 6,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000041",
+          "score": 0.32291659511704157,
+          "reasoning": "Operations Manager with 13.7 yrs in Delhi, Delhi; Airflow, SQL, Kubernetes skills. open to work.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.2521,
+            "skills": 0.019,
+            "career": 0.414,
+            "experience": 0.44,
+            "behavior": 0.5317,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [
+              "Airflow",
+              "SQL",
+              "Kubernetes"
+            ],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.2
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000025",
+      "score": 0.3226934289598273,
+      "reasoning": "Frontend Engineer with 7.3 yrs in Vizag, Andhra Pradesh; Data Pipelines, Spark skills. open to work, response rate 0.74. Watch: 120-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.1622,
+        "skills": 0.0182,
+        "career": 0.2425,
+        "experience": 1,
+        "behavior": 0.6165,
+        "location": 0.64,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "Data Pipelines",
+          "Spark"
+        ],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "open to work",
+          "high recruiter response"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.3333
+      },
+      "rank": 15,
+      "candidate": {
+        "candidate_id": "CAND_0000025",
+        "name": "Anika Kumar",
+        "title": "Frontend Engineer",
+        "headline": "Frontend Engineer | Cloud & DevOps",
+        "summary": "Software engineer with 7.3 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Vizag, Andhra Pradesh",
+        "country": "India",
+        "years": 7.3,
+        "company": "Tech Mahindra",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Spark",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 0
+          },
+          {
+            "name": "Data Pipelines",
+            "proficiency": "intermediate",
+            "duration_months": 32,
+            "endorsements": 9
+          },
+          {
+            "name": "JavaScript",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 10
+          },
+          {
+            "name": "GCP",
+            "proficiency": "beginner",
+            "duration_months": 13,
+            "endorsements": 7
+          },
+          {
+            "name": "TypeScript",
+            "proficiency": "beginner",
+            "duration_months": 17,
+            "endorsements": 2
+          },
+          {
+            "name": "LangChain",
+            "proficiency": "advanced",
+            "duration_months": 34,
+            "endorsements": 15
+          },
+          {
+            "name": "Apache Flink",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 2
+          },
+          {
+            "name": "ETL",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 1
+          },
+          {
+            "name": "Redis",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 0
+          }
+        ],
+        "career": [
+          {
+            "company": "Tech Mahindra",
+            "title": "Frontend Engineer",
+            "industry": "IT Services",
+            "duration_months": 33,
+            "is_current": true,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Mindtree",
+            "title": "Frontend Engineer",
+            "industry": "IT Services",
+            "duration_months": 48,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Zomato",
+            "title": "Frontend Engineer",
+            "industry": "Food Delivery",
+            "duration_months": 6,
+            "is_current": false,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-03-30",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.74,
+          "avg_response_time_hours": 128,
+          "notice_period_days": 120,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.7,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 9,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000025",
+          "score": 0.3226934289598273,
+          "reasoning": "Frontend Engineer with 7.3 yrs in Vizag, Andhra Pradesh; Data Pipelines, Spark skills. open to work, response rate 0.74. Watch: 120-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.1622,
+            "skills": 0.0182,
+            "career": 0.2425,
+            "experience": 1,
+            "behavior": 0.6165,
+            "location": 0.64,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "Data Pipelines",
+              "Spark"
+            ],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "open to work",
+              "high recruiter response"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000035",
+      "score": 0.31904738469593463,
+      "reasoning": "Full Stack Developer with 4.3 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence.",
+      "components": {
+        "title": 0.25,
+        "semantic": 0.1533,
+        "skills": 0.079,
+        "career": 0.1359,
+        "experience": 0.78,
+        "behavior": 0.4308,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "retrievalRanking",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "BentoML",
+          "Recommendation Systems",
+          "Kafka",
+          "Data Pipelines",
+          "Docker"
+        ],
+        "careerSignals": [],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 1,
+        "productCompanyRatio": 0
+      },
+      "rank": 16,
+      "candidate": {
+        "candidate_id": "CAND_0000035",
+        "name": "Vikram Verma",
+        "title": "Full Stack Developer",
+        "headline": "Full Stack Developer | Backend systems & APIs",
+        "summary": "Software engineer with 4.3 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. My background is full-stack, but my comfort zone is the backend and the database. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Hyderabad, Telangana",
+        "country": "India",
+        "years": 4.3,
+        "company": "Globex Inc",
+        "industry": "Manufacturing",
+        "skills": [
+          {
+            "name": "Recommendation Systems",
+            "proficiency": "intermediate",
+            "duration_months": 34,
+            "endorsements": 2
+          },
+          {
+            "name": "BentoML",
+            "proficiency": "advanced",
+            "duration_months": 59,
+            "endorsements": 40
+          },
+          {
+            "name": "Data Pipelines",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 14
+          },
+          {
+            "name": "Docker",
+            "proficiency": "beginner",
+            "duration_months": 11,
+            "endorsements": 3
+          },
+          {
+            "name": "Kafka",
+            "proficiency": "intermediate",
+            "duration_months": 29,
+            "endorsements": 14
+          },
+          {
+            "name": "Snowflake",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 11
+          },
+          {
+            "name": "BigQuery",
+            "proficiency": "beginner",
+            "duration_months": 6,
+            "endorsements": 15
+          },
+          {
+            "name": "MongoDB",
+            "proficiency": "intermediate",
+            "duration_months": 16,
+            "endorsements": 11
+          },
+          {
+            "name": "PostgreSQL",
+            "proficiency": "intermediate",
+            "duration_months": 13,
+            "endorsements": 14
+          },
+          {
+            "name": "Sales",
+            "proficiency": "intermediate",
+            "duration_months": 19,
+            "endorsements": 0
+          },
+          {
+            "name": "Speech Recognition",
+            "proficiency": "intermediate",
+            "duration_months": 33,
+            "endorsements": 5
+          },
+          {
+            "name": "Go",
+            "proficiency": "beginner",
+            "duration_months": 11,
+            "endorsements": 1
+          }
+        ],
+        "career": [
+          {
+            "company": "Globex Inc",
+            "title": "Full Stack Developer",
+            "industry": "Manufacturing",
+            "duration_months": 33,
+            "is_current": true,
+            "description": "Full-stack web application development at a SaaS company. Built React-based admin interfaces and the Node.js REST API backing them. Worked across the stack: frontend components, REST endpoint design, PostgreSQL schema, deployment via Docker/Kubernetes. Comfortable in most parts of a typical web stack though my comfort zone is the backend and database side. Recent learning has been on the testing and CI/CD discipline."
+          },
+          {
+            "company": "Wipro",
+            "title": "Software Engineer",
+            "industry": "IT Services",
+            "duration_months": 18,
+            "is_current": false,
+            "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-02-06",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.34,
+          "avg_response_time_hours": 178,
+          "notice_period_days": 60,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.5,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 1,
+          "preferred_work_mode": "onsite",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000035",
+          "score": 0.31904738469593463,
+          "reasoning": "Full Stack Developer with 4.3 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence.",
+          "components": {
+            "title": 0.25,
+            "semantic": 0.1533,
+            "skills": 0.079,
+            "career": 0.1359,
+            "experience": 0.78,
+            "behavior": 0.4308,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "retrievalRanking",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "BentoML",
+              "Recommendation Systems",
+              "Kafka",
+              "Data Pipelines",
+              "Docker"
+            ],
+            "careerSignals": [],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 1,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000029",
+      "score": 0.3163392169844188,
+      "reasoning": "Business Analyst with 7.2 yrs in Noida, Uttar Pradesh; adjacent ML/product signals.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.2248,
+        "skills": 0,
+        "career": 0.1458,
+        "experience": 1,
+        "behavior": 0.4308,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0
+      },
+      "rank": 17,
+      "candidate": {
+        "candidate_id": "CAND_0000029",
+        "name": "Priya Sethi",
+        "title": "Business Analyst",
+        "headline": "Business Analyst | Driving business outcomes",
+        "summary": "Professional with 7.2+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Noida, Uttar Pradesh",
+        "country": "India",
+        "years": 7.2,
+        "company": "Wipro",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Node.js",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 9
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "beginner",
+            "duration_months": 5,
+            "endorsements": 2
+          },
+          {
+            "name": "Tailwind",
+            "proficiency": "intermediate",
+            "duration_months": 21,
+            "endorsements": 5
+          },
+          {
+            "name": "Hadoop",
+            "proficiency": "beginner",
+            "duration_months": 4,
+            "endorsements": 10
+          },
+          {
+            "name": "Spring Boot",
+            "proficiency": "intermediate",
+            "duration_months": 10,
+            "endorsements": 1
+          },
+          {
+            "name": "CI/CD",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 4
+          },
+          {
+            "name": "gRPC",
+            "proficiency": "beginner",
+            "duration_months": 17,
+            "endorsements": 15
+          },
+          {
+            "name": "Terraform",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 9
+          }
+        ],
+        "career": [
+          {
+            "company": "Wipro",
+            "title": "Business Analyst",
+            "industry": "IT Services",
+            "duration_months": 16,
+            "is_current": true,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          },
+          {
+            "company": "Globex Inc",
+            "title": "Mechanical Engineer",
+            "industry": "Manufacturing",
+            "duration_months": 14,
+            "is_current": false,
+            "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up."
+          },
+          {
+            "company": "TCS",
+            "title": "Civil Engineer",
+            "industry": "IT Services",
+            "duration_months": 55,
+            "is_current": false,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-09-29",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.12,
+          "avg_response_time_hours": 48.4,
+          "notice_period_days": 60,
+          "github_activity_score": 42.5,
+          "interview_completion_rate": 0.67,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 8,
+          "preferred_work_mode": "onsite",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": false,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000029",
+          "score": 0.3163392169844188,
+          "reasoning": "Business Analyst with 7.2 yrs in Noida, Uttar Pradesh; adjacent ML/product signals.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.2248,
+            "skills": 0,
+            "career": 0.1458,
+            "experience": 1,
+            "behavior": 0.4308,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000045",
+      "score": 0.31601562381645765,
+      "reasoning": "Project Manager with 12.2 yrs in Indore, Madhya Pradesh; Airflow skills. open to work.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.22,
+        "skills": 0.0071,
+        "career": 0.3614,
+        "experience": 0.44,
+        "behavior": 0.6922,
+        "location": 0.82,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [
+          "Airflow"
+        ],
+        "careerSignals": [
+          "ownership language",
+          "short-tenure risk"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India + relocation",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.2857
+      },
+      "rank": 18,
+      "candidate": {
+        "candidate_id": "CAND_0000045",
+        "name": "Vikram Mittal",
+        "title": "Project Manager",
+        "headline": "Project Manager | 12.2+ yrs experience",
+        "summary": "Professional with 12.2+ years of experience. My professional background is in marketing manager — I've built and led teams, owned KPIs, and driven business outcomes in this domain. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Indore, Madhya Pradesh",
+        "country": "India",
+        "years": 12.2,
+        "company": "Initech",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Airflow",
+            "proficiency": "intermediate",
+            "duration_months": 18,
+            "endorsements": 5
+          },
+          {
+            "name": "GCP",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 1
+          },
+          {
+            "name": "Sales",
+            "proficiency": "intermediate",
+            "duration_months": 12,
+            "endorsements": 2
+          },
+          {
+            "name": "Redux",
+            "proficiency": "intermediate",
+            "duration_months": 25,
+            "endorsements": 14
+          },
+          {
+            "name": "PostgreSQL",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 1
+          },
+          {
+            "name": "SAP",
+            "proficiency": "intermediate",
+            "duration_months": 27,
+            "endorsements": 13
+          }
+        ],
+        "career": [
+          {
+            "company": "Initech",
+            "title": "Project Manager",
+            "industry": "Software",
+            "duration_months": 15,
+            "is_current": true,
+            "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders."
+          },
+          {
+            "company": "Pied Piper",
+            "title": "Civil Engineer",
+            "industry": "Software",
+            "duration_months": 13,
+            "is_current": false,
+            "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up."
+          },
+          {
+            "company": "Infosys",
+            "title": "Marketing Manager",
+            "industry": "IT Services",
+            "duration_months": 12,
+            "is_current": false,
+            "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise."
+          },
+          {
+            "company": "Wayne Enterprises",
+            "title": "Content Writer",
+            "industry": "Conglomerate",
+            "duration_months": 16,
+            "is_current": false,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-04-24",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.62,
+          "avg_response_time_hours": 20.8,
+          "notice_period_days": 60,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.33,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 6,
+          "preferred_work_mode": "hybrid",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000045",
+          "score": 0.31601562381645765,
+          "reasoning": "Project Manager with 12.2 yrs in Indore, Madhya Pradesh; Airflow skills. open to work.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.22,
+            "skills": 0.0071,
+            "career": 0.3614,
+            "experience": 0.44,
+            "behavior": 0.6922,
+            "location": 0.82,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [
+              "Airflow"
+            ],
+            "careerSignals": [
+              "ownership language",
+              "short-tenure risk"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India + relocation",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.2857
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000036",
+      "score": 0.30850535695197645,
+      "reasoning": "Project Manager with 11.3 yrs in Trivandrum, Kerala; adjacent ML/product signals. open to work.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.281,
+        "skills": 0,
+        "career": 0.4606,
+        "experience": 0.44,
+        "behavior": 0.5369,
+        "location": 0.58,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration",
+          "product"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "ownership language"
+        ],
+        "behaviorSignals": [
+          "open to work"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.4
+      },
+      "rank": 19,
+      "candidate": {
+        "candidate_id": "CAND_0000036",
+        "name": "Ananya Bose",
+        "title": "Project Manager",
+        "headline": "Project Manager | 11.3+ yrs experience",
+        "summary": "Professional with 11.3+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Trivandrum, Kerala",
+        "country": "India",
+        "years": 11.3,
+        "company": "Initech",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 13,
+            "endorsements": 6
+          },
+          {
+            "name": "MongoDB",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 4
+          },
+          {
+            "name": "PowerPoint",
+            "proficiency": "beginner",
+            "duration_months": 3,
+            "endorsements": 5
+          },
+          {
+            "name": "CSS",
+            "proficiency": "beginner",
+            "duration_months": 14,
+            "endorsements": 5
+          },
+          {
+            "name": "Excel",
+            "proficiency": "intermediate",
+            "duration_months": 28,
+            "endorsements": 9
+          },
+          {
+            "name": "GraphQL",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 5
+          },
+          {
+            "name": "Object Detection",
+            "proficiency": "advanced",
+            "duration_months": 37,
+            "endorsements": 39
+          },
+          {
+            "name": "Vue.js",
+            "proficiency": "beginner",
+            "duration_months": 4,
+            "endorsements": 13
+          },
+          {
+            "name": "Sales",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 4
+          }
+        ],
+        "career": [
+          {
+            "company": "Initech",
+            "title": "Project Manager",
+            "industry": "Software",
+            "duration_months": 16,
+            "is_current": true,
+            "description": "Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design."
+          },
+          {
+            "company": "Hooli",
+            "title": "Content Writer",
+            "industry": "Software",
+            "duration_months": 18,
+            "is_current": false,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          },
+          {
+            "company": "Dunder Mifflin",
+            "title": "HR Manager",
+            "industry": "Paper Products",
+            "duration_months": 45,
+            "is_current": false,
+            "description": "Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design."
+          },
+          {
+            "company": "TCS",
+            "title": "Civil Engineer",
+            "industry": "IT Services",
+            "duration_months": 24,
+            "is_current": false,
+            "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-12-12",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.4,
+          "avg_response_time_hours": 236.6,
+          "notice_period_days": 60,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.78,
+          "offer_acceptance_rate": 0.46,
+          "saved_by_recruiters_30d": 0,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": false,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000036",
+          "score": 0.30850535695197645,
+          "reasoning": "Project Manager with 11.3 yrs in Trivandrum, Kerala; adjacent ML/product signals. open to work.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.281,
+            "skills": 0,
+            "career": 0.4606,
+            "experience": 0.44,
+            "behavior": 0.5369,
+            "location": 0.58,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration",
+              "product"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "ownership language"
+            ],
+            "behaviorSignals": [
+              "open to work"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.4
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000011",
+      "score": 0.30189711465753466,
+      "reasoning": "QA Engineer with 2 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence; product-company history.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.2258,
+        "skills": 0.0632,
+        "career": 0.52,
+        "experience": 0.16,
+        "behavior": 0.4499,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "retrievalRanking",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "Recommendation Systems",
+          "Kubeflow",
+          "Hugging Face Transformers",
+          "FastAPI"
+        ],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 1,
+        "productCompanyRatio": 1
+      },
+      "rank": 20,
+      "candidate": {
+        "candidate_id": "CAND_0000011",
+        "name": "Deepak Desai",
+        "title": "QA Engineer",
+        "headline": "QA Engineer | Cloud & DevOps",
+        "summary": "Software engineer with 2.0 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. Most of my work is conventional backend engineering — APIs, databases, queues, deployments. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Hyderabad, Telangana",
+        "country": "India",
+        "years": 2,
+        "company": "Pied Piper",
+        "industry": "Software",
+        "skills": [
+          {
+            "name": "Recommendation Systems",
+            "proficiency": "advanced",
+            "duration_months": 40,
+            "endorsements": 5
+          },
+          {
+            "name": "Hugging Face Transformers",
+            "proficiency": "intermediate",
+            "duration_months": 30,
+            "endorsements": 1
+          },
+          {
+            "name": "Kubeflow",
+            "proficiency": "advanced",
+            "duration_months": 59,
+            "endorsements": 6
+          },
+          {
+            "name": "FastAPI",
+            "proficiency": "beginner",
+            "duration_months": 12,
+            "endorsements": 4
+          },
+          {
+            "name": "Scrum",
+            "proficiency": "beginner",
+            "duration_months": 7,
+            "endorsements": 13
+          },
+          {
+            "name": "AWS",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 4
+          },
+          {
+            "name": "Snowflake",
+            "proficiency": "beginner",
+            "duration_months": 11,
+            "endorsements": 4
+          },
+          {
+            "name": "Spring Boot",
+            "proficiency": "intermediate",
+            "duration_months": 31,
+            "endorsements": 12
+          },
+          {
+            "name": "PostgreSQL",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 7
+          },
+          {
+            "name": "Azure",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 12
+          }
+        ],
+        "career": [
+          {
+            "company": "Pied Piper",
+            "title": "QA Engineer",
+            "industry": "Software",
+            "duration_months": 13,
+            "is_current": true,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          },
+          {
+            "company": "Hooli",
+            "title": "QA Engineer",
+            "industry": "Software",
+            "duration_months": 10,
+            "is_current": false,
+            "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-01-19",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.56,
+          "avg_response_time_hours": 184.4,
+          "notice_period_days": 90,
+          "github_activity_score": 32.3,
+          "interview_completion_rate": 0.45,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 13,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000011",
+          "score": 0.30189711465753466,
+          "reasoning": "QA Engineer with 2 yrs in Hyderabad, Telangana; clear retrieval/ranking evidence; product-company history.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.2258,
+            "skills": 0.0632,
+            "career": 0.52,
+            "experience": 0.16,
+            "behavior": 0.4499,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "retrievalRanking",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "Recommendation Systems",
+              "Kubeflow",
+              "Hugging Face Transformers",
+              "FastAPI"
+            ],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 1,
+            "productCompanyRatio": 1
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000020",
+      "score": 0.29904708822103493,
+      "reasoning": "Mechanical Engineer with 6.3 yrs in Ahmedabad, Gujarat; adjacent ML/product signals. 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.1626,
+        "skills": 0,
+        "career": 0.2308,
+        "experience": 1,
+        "behavior": 0.499,
+        "location": 0.58,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0
+      },
+      "rank": 21,
+      "candidate": {
+        "candidate_id": "CAND_0000020",
+        "name": "Aditya Iyengar",
+        "title": "Mechanical Engineer",
+        "headline": "Mechanical Engineer | 6.3+ yrs experience",
+        "summary": "Professional with 6.3+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Ahmedabad, Gujarat",
+        "country": "India",
+        "years": 6.3,
+        "company": "Wipro",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "GraphQL",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 15
+          },
+          {
+            "name": "TypeScript",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 7
+          },
+          {
+            "name": "Flask",
+            "proficiency": "beginner",
+            "duration_months": 16,
+            "endorsements": 11
+          },
+          {
+            "name": "Weights & Biases",
+            "proficiency": "advanced",
+            "duration_months": 30,
+            "endorsements": 50
+          },
+          {
+            "name": "GCP",
+            "proficiency": "intermediate",
+            "duration_months": 34,
+            "endorsements": 2
+          },
+          {
+            "name": "Salesforce CRM",
+            "proficiency": "beginner",
+            "duration_months": 16,
+            "endorsements": 8
+          },
+          {
+            "name": "HTML",
+            "proficiency": "intermediate",
+            "duration_months": 35,
+            "endorsements": 2
+          }
+        ],
+        "career": [
+          {
+            "company": "Wipro",
+            "title": "Mechanical Engineer",
+            "industry": "IT Services",
+            "duration_months": 36,
+            "is_current": true,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          },
+          {
+            "company": "Stark Industries",
+            "title": "Graphic Designer",
+            "industry": "Manufacturing",
+            "duration_months": 33,
+            "is_current": false,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          },
+          {
+            "company": "Dunder Mifflin",
+            "title": "Civil Engineer",
+            "industry": "Paper Products",
+            "duration_months": 6,
+            "is_current": false,
+            "description": "Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-10-05",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.55,
+          "avg_response_time_hours": 207.8,
+          "notice_period_days": 30,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.71,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 11,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": false,
+          "linkedin_connected": true
+        },
+        "result": {
+          "candidate_id": "CAND_0000020",
+          "score": 0.29904708822103493,
+          "reasoning": "Mechanical Engineer with 6.3 yrs in Ahmedabad, Gujarat; adjacent ML/product signals. 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.1626,
+            "skills": 0,
+            "career": 0.2308,
+            "experience": 1,
+            "behavior": 0.499,
+            "location": 0.58,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000030",
+      "score": 0.2971888927577367,
+      "reasoning": "Marketing Manager with 10 yrs in Kochi, Kerala; product-company history.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.105,
+        "skills": 0,
+        "career": 0.484,
+        "experience": 0.72,
+        "behavior": 0.4776,
+        "location": 0.64,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [
+          "product-company history",
+          "ownership language"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.6667
+      },
+      "rank": 22,
+      "candidate": {
+        "candidate_id": "CAND_0000030",
+        "name": "Ritu Pillai",
+        "title": "Marketing Manager",
+        "headline": "Marketing Manager | Driving business outcomes",
+        "summary": "Professional with 10.0+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Kochi, Kerala",
+        "country": "India",
+        "years": 10,
+        "company": "Dunder Mifflin",
+        "industry": "Paper Products",
+        "skills": [
+          {
+            "name": "gRPC",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 3
+          },
+          {
+            "name": "Apache Beam",
+            "proficiency": "beginner",
+            "duration_months": 6,
+            "endorsements": 5
+          },
+          {
+            "name": "GraphQL",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 2
+          },
+          {
+            "name": "Java",
+            "proficiency": "intermediate",
+            "duration_months": 11,
+            "endorsements": 14
+          },
+          {
+            "name": "Spring Boot",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 2
+          },
+          {
+            "name": "Microservices",
+            "proficiency": "beginner",
+            "duration_months": 5,
+            "endorsements": 11
+          },
+          {
+            "name": "Six Sigma",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 8
+          },
+          {
+            "name": "Accounting",
+            "proficiency": "intermediate",
+            "duration_months": 30,
+            "endorsements": 3
+          },
+          {
+            "name": "HTML",
+            "proficiency": "intermediate",
+            "duration_months": 9,
+            "endorsements": 12
+          }
+        ],
+        "career": [
+          {
+            "company": "Dunder Mifflin",
+            "title": "Marketing Manager",
+            "industry": "Paper Products",
+            "duration_months": 51,
+            "is_current": true,
+            "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years."
+          },
+          {
+            "company": "Hooli",
+            "title": "Sales Executive",
+            "industry": "Software",
+            "duration_months": 45,
+            "is_current": false,
+            "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months."
+          },
+          {
+            "company": "Hooli",
+            "title": "Content Writer",
+            "industry": "Software",
+            "duration_months": 22,
+            "is_current": false,
+            "description": "Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-10-27",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.66,
+          "avg_response_time_hours": 131.1,
+          "notice_period_days": 60,
+          "github_activity_score": 21.7,
+          "interview_completion_rate": 0.73,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 1,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": false,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000030",
+          "score": 0.2971888927577367,
+          "reasoning": "Marketing Manager with 10 yrs in Kochi, Kerala; product-company history.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.105,
+            "skills": 0,
+            "career": 0.484,
+            "experience": 0.72,
+            "behavior": 0.4776,
+            "location": 0.64,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [
+              "product-company history",
+              "ownership language"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.6667
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000033",
+      "score": 0.289950549620121,
+      "reasoning": "Graphic Designer with 8.6 yrs in Pune, Maharashtra; Airflow, Kubernetes, Data Pipelines skills. open to work, 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.0813,
+        "skills": 0.0169,
+        "career": 0.0659,
+        "experience": 1,
+        "behavior": 0.5408,
+        "location": 1,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration"
+        ],
+        "skillHighlights": [
+          "Airflow",
+          "Kubernetes",
+          "Data Pipelines"
+        ],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "open to work",
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "target city",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0
+      },
+      "rank": 23,
+      "candidate": {
+        "candidate_id": "CAND_0000033",
+        "name": "Shreya Nair",
+        "title": "Graphic Designer",
+        "headline": "Graphic Designer | Helping teams scale",
+        "summary": "Professional with 8.6+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Pune, Maharashtra",
+        "country": "India",
+        "years": 8.6,
+        "company": "Wipro",
+        "industry": "IT Services",
+        "skills": [
+          {
+            "name": "Kubernetes",
+            "proficiency": "beginner",
+            "duration_months": 9,
+            "endorsements": 0
+          },
+          {
+            "name": "Data Pipelines",
+            "proficiency": "beginner",
+            "duration_months": 8,
+            "endorsements": 4
+          },
+          {
+            "name": "Airflow",
+            "proficiency": "intermediate",
+            "duration_months": 16,
+            "endorsements": 11
+          },
+          {
+            "name": "Snowflake",
+            "proficiency": "intermediate",
+            "duration_months": 12,
+            "endorsements": 11
+          },
+          {
+            "name": "CI/CD",
+            "proficiency": "intermediate",
+            "duration_months": 29,
+            "endorsements": 11
+          },
+          {
+            "name": "SEO",
+            "proficiency": "intermediate",
+            "duration_months": 36,
+            "endorsements": 9
+          },
+          {
+            "name": "ETL",
+            "proficiency": "intermediate",
+            "duration_months": 20,
+            "endorsements": 0
+          },
+          {
+            "name": "TypeScript",
+            "proficiency": "intermediate",
+            "duration_months": 15,
+            "endorsements": 13
+          },
+          {
+            "name": "Content Writing",
+            "proficiency": "intermediate",
+            "duration_months": 11,
+            "endorsements": 13
+          },
+          {
+            "name": "Spring Boot",
+            "proficiency": "intermediate",
+            "duration_months": 26,
+            "endorsements": 5
+          }
+        ],
+        "career": [
+          {
+            "company": "Wipro",
+            "title": "Graphic Designer",
+            "industry": "IT Services",
+            "duration_months": 31,
+            "is_current": true,
+            "description": "Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited."
+          },
+          {
+            "company": "Dunder Mifflin",
+            "title": "Project Manager",
+            "industry": "Paper Products",
+            "duration_months": 40,
+            "is_current": false,
+            "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years."
+          },
+          {
+            "company": "Acme Corp",
+            "title": "Content Writer",
+            "industry": "Manufacturing",
+            "duration_months": 31,
+            "is_current": false,
+            "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-03-27",
+          "open_to_work_flag": true,
+          "recruiter_response_rate": 0.08,
+          "avg_response_time_hours": 210.9,
+          "notice_period_days": 30,
+          "github_activity_score": 38.3,
+          "interview_completion_rate": 0.37,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 2,
+          "preferred_work_mode": "remote",
+          "willing_to_relocate": false,
+          "verified_email": false,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000033",
+          "score": 0.289950549620121,
+          "reasoning": "Graphic Designer with 8.6 yrs in Pune, Maharashtra; Airflow, Kubernetes, Data Pipelines skills. open to work, 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.0813,
+            "skills": 0.0169,
+            "career": 0.0659,
+            "experience": 1,
+            "behavior": 0.5408,
+            "location": 1,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration"
+            ],
+            "skillHighlights": [
+              "Airflow",
+              "Kubernetes",
+              "Data Pipelines"
+            ],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "open to work",
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "target city",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000018",
+      "score": 0.2886089692825402,
+      "reasoning": "Frontend Engineer with 6.6 yrs in Bhubaneswar, Odisha; Data Pipelines skills; product-company history. Watch: 120-day notice.",
+      "components": {
+        "title": 0.1018,
+        "semantic": 0.1322,
+        "skills": 0,
+        "career": 0.2633,
+        "experience": 1,
+        "behavior": 0.3565,
+        "location": 0.64,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "collaboration",
+          "production",
+          "llmDepth"
+        ],
+        "skillHighlights": [
+          "Data Pipelines"
+        ],
+        "careerSignals": [
+          "product-company history"
+        ],
+        "behaviorSignals": [],
+        "riskFlags": [],
+        "locationSignal": "India",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0.6667
+      },
+      "rank": 24,
+      "candidate": {
+        "candidate_id": "CAND_0000018",
+        "name": "Vivaan Reddy",
+        "title": "Frontend Engineer",
+        "headline": "Frontend Engineer | Full-stack development",
+        "summary": "Software engineer with 6.6 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. My background is full-stack, but my comfort zone is the backend and the database. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project — but I haven't done it in a professional capacity yet. Open to roles where I can either deepen my software engineering work or, if the team is open to it, start contributing to ML-adjacent systems.",
+        "location": "Bhubaneswar, Odisha",
+        "country": "India",
+        "years": 6.6,
+        "company": "Acme Corp",
+        "industry": "Manufacturing",
+        "skills": [
+          {
+            "name": "Data Pipelines",
+            "proficiency": "beginner",
+            "duration_months": 13,
+            "endorsements": 3
+          },
+          {
+            "name": "CNN",
+            "proficiency": "advanced",
+            "duration_months": 55,
+            "endorsements": 53
+          },
+          {
+            "name": "Java",
+            "proficiency": "intermediate",
+            "duration_months": 12,
+            "endorsements": 10
+          },
+          {
+            "name": "Accounting",
+            "proficiency": "intermediate",
+            "duration_months": 20,
+            "endorsements": 9
+          },
+          {
+            "name": "Node.js",
+            "proficiency": "intermediate",
+            "duration_months": 9,
+            "endorsements": 0
+          },
+          {
+            "name": "Tailwind",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 10
+          }
+        ],
+        "career": [
+          {
+            "company": "Acme Corp",
+            "title": "Frontend Engineer",
+            "industry": "Manufacturing",
+            "duration_months": 33,
+            "is_current": true,
+            "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering."
+          },
+          {
+            "company": "Pied Piper",
+            "title": "Frontend Engineer",
+            "industry": "Software",
+            "duration_months": 32,
+            "is_current": false,
+            "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering."
+          },
+          {
+            "company": "Initech",
+            "title": "Full Stack Developer",
+            "industry": "Software",
+            "duration_months": 13,
+            "is_current": false,
+            "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2026-02-18",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.16,
+          "avg_response_time_hours": 154.6,
+          "notice_period_days": 120,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.7,
+          "offer_acceptance_rate": 0.46,
+          "saved_by_recruiters_30d": 16,
+          "preferred_work_mode": "onsite",
+          "willing_to_relocate": false,
+          "verified_email": false,
+          "verified_phone": false,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000018",
+          "score": 0.2886089692825402,
+          "reasoning": "Frontend Engineer with 6.6 yrs in Bhubaneswar, Odisha; Data Pipelines skills; product-company history. Watch: 120-day notice.",
+          "components": {
+            "title": 0.1018,
+            "semantic": 0.1322,
+            "skills": 0,
+            "career": 0.2633,
+            "experience": 1,
+            "behavior": 0.3565,
+            "location": 0.64,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "collaboration",
+              "production",
+              "llmDepth"
+            ],
+            "skillHighlights": [
+              "Data Pipelines"
+            ],
+            "careerSignals": [
+              "product-company history"
+            ],
+            "behaviorSignals": [],
+            "riskFlags": [],
+            "locationSignal": "India",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0.6667
+          }
+        }
+      }
+    },
+    {
+      "candidate_id": "CAND_0000042",
+      "score": 0.2871488286453713,
+      "reasoning": "HR Manager with 5 yrs in Berlin; adjacent ML/product signals. 30-day notice.",
+      "components": {
+        "title": 0.06,
+        "semantic": 0.1288,
+        "skills": 0,
+        "career": 0.2308,
+        "experience": 1,
+        "behavior": 0.5107,
+        "location": 0.48,
+        "integrity": 1,
+        "penalty": 0
+      },
+      "evidence": {
+        "concepts": [
+          "production",
+          "collaboration"
+        ],
+        "skillHighlights": [],
+        "careerSignals": [],
+        "behaviorSignals": [
+          "short notice"
+        ],
+        "riskFlags": [],
+        "locationSignal": "relocation possible",
+        "aiCoreSkillCount": 0,
+        "productCompanyRatio": 0
+      },
+      "rank": 25,
+      "candidate": {
+        "candidate_id": "CAND_0000042",
+        "name": "Riya Mukherjee",
+        "title": "HR Manager",
+        "headline": "HR Manager | 5.0+ yrs experience",
+        "summary": "Professional with 5.0+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my domain expertise alongside emerging AI capabilities.",
+        "location": "Berlin",
+        "country": "Germany",
+        "years": 5,
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "skills": [
+          {
+            "name": "Project Management",
+            "proficiency": "intermediate",
+            "duration_months": 33,
+            "endorsements": 3
+          },
+          {
+            "name": "gRPC",
+            "proficiency": "beginner",
+            "duration_months": 10,
+            "endorsements": 3
+          },
+          {
+            "name": "Marketing",
+            "proficiency": "intermediate",
+            "duration_months": 24,
+            "endorsements": 10
+          },
+          {
+            "name": "SAP",
+            "proficiency": "beginner",
+            "duration_months": 18,
+            "endorsements": 12
+          },
+          {
+            "name": "Illustrator",
+            "proficiency": "beginner",
+            "duration_months": 14,
+            "endorsements": 11
+          },
+          {
+            "name": "Node.js",
+            "proficiency": "intermediate",
+            "duration_months": 14,
+            "endorsements": 3
+          },
+          {
+            "name": "YOLO",
+            "proficiency": "intermediate",
+            "duration_months": 22,
+            "endorsements": 5
+          },
+          {
+            "name": "Tailwind",
+            "proficiency": "beginner",
+            "duration_months": 16,
+            "endorsements": 8
+          },
+          {
+            "name": "CSS",
+            "proficiency": "beginner",
+            "duration_months": 12,
+            "endorsements": 11
+          },
+          {
+            "name": "Figma",
+            "proficiency": "beginner",
+            "duration_months": 7,
+            "endorsements": 10
+          }
+        ],
+        "career": [
+          {
+            "company": "Wayne Enterprises",
+            "title": "HR Manager",
+            "industry": "Conglomerate",
+            "duration_months": 26,
+            "is_current": true,
+            "description": "Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality."
+          },
+          {
+            "company": "Wipro",
+            "title": "Business Analyst",
+            "industry": "IT Services",
+            "duration_months": 12,
+            "is_current": false,
+            "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders."
+          },
+          {
+            "company": "Infosys",
+            "title": "Customer Support",
+            "industry": "IT Services",
+            "duration_months": 21,
+            "is_current": false,
+            "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment."
+          }
+        ],
+        "signals": {
+          "last_active_date": "2025-10-23",
+          "open_to_work_flag": false,
+          "recruiter_response_rate": 0.58,
+          "avg_response_time_hours": 24.8,
+          "notice_period_days": 30,
+          "github_activity_score": -1,
+          "interview_completion_rate": 0.35,
+          "offer_acceptance_rate": -1,
+          "saved_by_recruiters_30d": 9,
+          "preferred_work_mode": "flexible",
+          "willing_to_relocate": true,
+          "verified_email": true,
+          "verified_phone": true,
+          "linkedin_connected": false
+        },
+        "result": {
+          "candidate_id": "CAND_0000042",
+          "score": 0.2871488286453713,
+          "reasoning": "HR Manager with 5 yrs in Berlin; adjacent ML/product signals. 30-day notice.",
+          "components": {
+            "title": 0.06,
+            "semantic": 0.1288,
+            "skills": 0,
+            "career": 0.2308,
+            "experience": 1,
+            "behavior": 0.5107,
+            "location": 0.48,
+            "integrity": 1,
+            "penalty": 0
+          },
+          "evidence": {
+            "concepts": [
+              "production",
+              "collaboration"
+            ],
+            "skillHighlights": [],
+            "careerSignals": [],
+            "behaviorSignals": [
+              "short notice"
+            ],
+            "riskFlags": [],
+            "locationSignal": "relocation possible",
+            "aiCoreSkillCount": 0,
+            "productCompanyRatio": 0
+          }
+        }
+      }
+    }
+  ]
+}
