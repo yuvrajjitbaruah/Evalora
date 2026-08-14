@@ -1,3 +1,4 @@
+import io
 import json
 import re
 import zipfile
@@ -11,11 +12,22 @@ from django.views.decorators.http import require_GET, require_http_methods
 
 from .ai_services import AiProviderError, analyze_resume, candidate_ai_action, provider_status
 from .services import (
+    build_analytics,
+    create_pool,
+    delete_decision,
+    delete_pool,
+    export_shortlist_csv,
     get_ranking_payload,
+    get_recent_activity,
     get_sample_candidates,
     get_score_report,
+    list_decisions,
+    list_pools,
+    log_activity,
     rank_sample_candidates,
     submission_file,
+    update_pool_candidates,
+    upsert_decision,
 )
 
 
@@ -78,14 +90,15 @@ def api_ai_candidate_action(request):
     if not candidate_id:
         return JsonResponse({"error": "candidate_id is required."}, status=400)
 
+    task = str(payload.get("task") or "brief")
     try:
-        return JsonResponse(
-            candidate_ai_action(
-                candidate_id=candidate_id,
-                task=str(payload.get("task") or "brief"),
-                provider=str(payload.get("provider") or "auto"),
-            )
+        result = candidate_ai_action(
+            candidate_id=candidate_id,
+            task=task,
+            provider=str(payload.get("provider") or "auto"),
         )
+        log_activity("ai_action", candidate_id=candidate_id, detail=f"Copilot task: {task}")
+        return JsonResponse(result)
     except ValueError as exc:
         return JsonResponse({"error": str(exc)}, status=404)
     except AiProviderError as exc:
@@ -109,7 +122,9 @@ def api_ats_analyze(request):
         return JsonResponse({"error": str(exc)}, status=400)
 
     try:
-        return JsonResponse(analyze_resume(resume_text, job_description=job_description, provider=provider))
+        result = analyze_resume(resume_text, job_description=job_description, provider=provider)
+        log_activity("ats_analysis", detail=f"ATS analysis via {provider}")
+        return JsonResponse(result)
     except ValueError as exc:
         return JsonResponse({"error": str(exc)}, status=400)
     except AiProviderError as exc:
@@ -218,5 +233,143 @@ def download_submission(request):
     if not path.exists():
         raise Http404("Ranked submission CSV has not been generated yet.")
     return FileResponse(path.open("rb"), as_attachment=True, filename="evalora_submission.csv")
+
+
+# ---------------------------------------------------------------------------
+# Server-persisted recruiter decisions (team-shared shortlist/review/reject board)
+# ---------------------------------------------------------------------------
+
+@require_GET
+def api_decisions(request):
+    return JsonResponse({"decisions": list_decisions()})
+
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def api_decision_upsert(request):
+    try:
+        payload = json.loads(request.body.decode("utf-8") or "{}")
+    except json.JSONDecodeError as exc:
+        return JsonResponse({"error": f"Invalid JSON: {exc.msg}"}, status=400)
+
+    candidate_id = str(payload.get("candidate_id") or "").strip()
+    if not candidate_id:
+        return JsonResponse({"error": "candidate_id is required."}, status=400)
+
+    tags = payload.get("tags") or []
+    if isinstance(tags, str):
+        tags = [tag.strip() for tag in tags.split(",")]
+
+    try:
+        result = upsert_decision(
+            candidate_id=candidate_id,
+            status=str(payload.get("status") or "review"),
+            notes=str(payload.get("notes") or ""),
+            tags=tags,
+            updated_by=str(payload.get("updated_by") or ""),
+        )
+        return JsonResponse(result)
+    except ValueError as exc:
+        return JsonResponse({"error": str(exc)}, status=400)
+
+
+@csrf_exempt
+@require_http_methods(["DELETE"])
+def api_decision_delete(request, candidate_id: str):
+    deleted = delete_decision(candidate_id)
+    if not deleted:
+        return JsonResponse({"error": "No decision found for that candidate."}, status=404)
+    return JsonResponse({"deleted": True, "candidate_id": candidate_id})
+
+
+# ---------------------------------------------------------------------------
+# Talent pools
+# ---------------------------------------------------------------------------
+
+@require_GET
+def api_pools(request):
+    return JsonResponse({"pools": list_pools()})
+
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def api_pool_create(request):
+    try:
+        payload = json.loads(request.body.decode("utf-8") or "{}")
+    except json.JSONDecodeError as exc:
+        return JsonResponse({"error": f"Invalid JSON: {exc.msg}"}, status=400)
+
+    try:
+        return JsonResponse(create_pool(str(payload.get("name") or ""), str(payload.get("description") or "")))
+    except ValueError as exc:
+        return JsonResponse({"error": str(exc)}, status=400)
+
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def api_pool_members(request, pool_id: int):
+    try:
+        payload = json.loads(request.body.decode("utf-8") or "{}")
+    except json.JSONDecodeError as exc:
+        return JsonResponse({"error": f"Invalid JSON: {exc.msg}"}, status=400)
+
+    add = payload.get("add") or []
+    remove = payload.get("remove") or []
+    try:
+        return JsonResponse(update_pool_candidates(pool_id, add=add, remove=remove))
+    except ValueError as exc:
+        return JsonResponse({"error": str(exc)}, status=404)
+
+
+@csrf_exempt
+@require_http_methods(["DELETE"])
+def api_pool_delete(request, pool_id: int):
+    deleted = delete_pool(pool_id)
+    if not deleted:
+        return JsonResponse({"error": "No talent pool found with that ID."}, status=404)
+    return JsonResponse({"deleted": True, "pool_id": pool_id})
+
+
+# ---------------------------------------------------------------------------
+# Analytics dashboard
+# ---------------------------------------------------------------------------
+
+@require_GET
+def api_analytics(request):
+    return JsonResponse(build_analytics())
+
+
+# ---------------------------------------------------------------------------
+# Activity log
+# ---------------------------------------------------------------------------
+
+@require_GET
+def api_activity(request):
+    return JsonResponse({"activity": get_recent_activity()})
+
+
+# ---------------------------------------------------------------------------
+# Recruiter-ready shortlist export (CSV handoff report)
+# ---------------------------------------------------------------------------
+
+@require_GET
+def api_export_shortlist(request):
+    status_filter = request.GET.get("status") or None
+    csv_text = export_shortlist_csv(status_filter=status_filter)
+    response = JsonResponse({"csv": csv_text})
+    return response
+
+
+@require_GET
+def download_shortlist_report(request):
+    status_filter = request.GET.get("status") or None
+    csv_text = export_shortlist_csv(status_filter=status_filter)
+    response = FileResponse(
+        io.BytesIO(csv_text.encode("utf-8")),
+        as_attachment=True,
+        filename="evalora_shortlist_report.csv",
+        content_type="text/csv",
+    )
+    return response
 
 # Create your views here.
