@@ -14,7 +14,7 @@
 [![Sarvam](https://img.shields.io/badge/Sarvam_30B-ready-1D97BA?style=flat-square)](https://sarvam.ai)
 [![GitHub Stars](https://img.shields.io/github/stars/yuvrajjitbaruah/Evalora?style=flat-square&color=yellow)](https://github.com/yuvrajjitbaruah/Evalora/stargazers)
 
-[Report a Bug](https://github.com/yuvrajjitbaruah/Evalora/issues) · [Request a Feature](https://github.com/yuvrajjitbaruah/Evalora/issues)
+[Report a Bug](https://github.com/yuvrajjitbaruah/Evalora/issues) · [Request a Feature](https://github.com/yuvrajjitbaruah/Evalora/issues) · [Wiki](https://github.com/yuvrajjitbaruah/Evalora/wiki)
 
 </div>
 
@@ -24,9 +24,11 @@
 
 **Evalora** is a recruiter-grade AI candidate ranking and ATS intelligence platform. Instead of shallow keyword matching, Evalora scores candidates across five dimensions — career evidence, semantic fit, behavioral readiness, logistics, and risk signals — delivering a trusted, deterministic shortlist your team can act on.
 
+Beyond ranking, Evalora now ships a **persisted recruiter workspace**: a shared, database-backed decision board, named talent pools, a pipeline analytics dashboard, a full audit trail, and one-click shortlist exports — so a hiring team's work survives page refreshes, browser changes, and different machines.
+
 Built with Python, Django, a deterministic hybrid ranking engine (Node.js), and optional AI augmentation via Google Gemini and Sarvam AI.
 
-> **Stack:** Python · Django · JavaScript · Node.js · Gemini 2.5 Flash · Sarvam 30B
+> **Stack:** Python · Django · SQLite · JavaScript · Node.js · Gemini 2.5 Flash · Sarvam 30B
 
 ---
 
@@ -41,7 +43,12 @@ Built with Python, Django, a deterministic hybrid ranking engine (Node.js), and 
 | Area | What it does |
 |---|---|
 | **Ranking Engine** | Streams the full candidate pool and ranks deterministically — no per-candidate hosted model calls |
-| **Shortlist Console** | Search, filters, table/card views, fit tags, risk notes, comparison mode, and decision workflow |
+| **Shortlist Console** | Search, filters, table/card views, fit tags, risk notes, comparison mode, and a local decision workflow |
+| **Team Sync** *(new)* | Pushes local decisions to a shared, Django-backed decision board so every recruiter sees the same shortlist state |
+| **Talent Pools** *(new)* | Named, reusable candidate shortlists (e.g. "Final round", "Backup bench") that persist across sessions |
+| **Analytics Dashboard** *(new)* | Pipeline funnel, score distribution, top skills/locations, risk-flag breakdown, and average component fit — all computed server-side |
+| **Activity Log** *(new)* | Full audit trail of every decision change, AI Copilot call, ATS analysis, and export |
+| **Shortlist Export** *(new)* | One-click CSV handoff report of shortlisted/reviewed/rejected candidates, complete with notes and tags, for sharing with hiring managers |
 | **ATS Analyzer** | Reviews pasted resume text or uploaded `.txt`, `.docx`, and `.pdf` files against the target role |
 | **AI Copilot** | Generates recruiter briefs, interview kits, scorecards, risk audits, outreach drafts, and Boolean queries |
 | **AI Provider Routing** | Auto-routes to Gemini or Sarvam when configured; falls back to deterministic local result gracefully |
@@ -51,10 +58,10 @@ Built with Python, Django, a deterministic hybrid ranking engine (Node.js), and 
 
 ## Tech Stack
 Frontend   →  HTML · CSS · Vanilla JS
-Backend    →  Python 3.12 · Django 5.x
+Backend    →  Python 3.12 · Django 5.x · Django ORM models
 Ranker     →  Node.js 20 (built-in APIs, zero dependencies)
 AI Layer   →  Google Gemini 2.5 Flash · Sarvam 30B · Local deterministic fallback
-Storage    →  SQLite (dev) · Production DB ready
+Storage    →  SQLite (dev) · Production DB ready — now backs decisions, talent pools, and the activity log
 Config     →  .env.local (never committed)
 
 ---
@@ -64,19 +71,26 @@ Config     →  .env.local (never committed)
 ```text
 Evalora/
 ├── evalora_project/        # Django settings and root URL config
-├── recruiter/              # Main app — views, API, AI services, templates, static UI
+├── recruiter/               # Main app — views, API, AI services, models, templates, static UI
+│   ├── models.py           # CandidateDecision, TalentPool, ActivityLog (new)
+│   ├── services.py         # Ranking logic + decision/pool/analytics/export services (extended)
+│   ├── views.py            # API endpoints, including the new Team Sync & Analytics routes
+│   ├── migrations/         # 0001_initial.py creates the new tables
+│   └── static/recruiter/
+│       ├── js/dashboard.js # Original shortlist, workflow, ATS, and AI Copilot UI (unchanged)
+│       └── js/team.js      # Analytics, Team Sync, Talent Pools, Activity Log UI (new)
 ├── src/
-│   └── ranker/             # Deterministic Node.js ranking and CSV validation engine
+│   └── ranker/              # Deterministic Node.js ranking and CSV validation engine
 ├── public/
-│   ├── data/               # Generated dashboard data (JSON)
-│   └── js/                 # Standalone ranking core for static preview
-├── outputs/                # Submission CSV files
-├── docs/                   # Methodology notes and screenshots
-├── data/                   # Dataset placement (raw data excluded from repo)
-├── scripts/                # Utility scripts
-├── manage.py               # Django entry point
-├── requirements.txt        # Python dependencies
-└── package.json            # Node scripts (rank, validate)
+│   ├── data/                # Generated dashboard data (JSON)
+│   └── js/                  # Standalone ranking core for static preview
+├── outputs/                 # Submission CSV files
+├── docs/                    # Methodology notes and screenshots
+├── data/                    # Dataset placement (raw data excluded from repo)
+├── scripts/                 # Utility scripts
+├── manage.py                # Django entry point
+├── requirements.txt         # Python dependencies
+└── package.json             # Node scripts (rank, validate)
 ```
 
 ## Getting Started
@@ -133,6 +147,8 @@ copy .env.example .env.local
 python manage.py migrate
 python manage.py runserver 127.0.0.1:8000
 ```
+
+The `migrate` step now also creates the tables behind Team Sync, Talent Pools, and the Activity Log (`recruiter.CandidateDecision`, `recruiter.TalentPool`, `recruiter.ActivityLog`) — no extra setup required.
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
@@ -202,6 +218,30 @@ The validator checks headers, row count, rank order, score ordering, candidate u
 
 ---
 
+## Team Sync, Talent Pools, Analytics & Activity Log *(new)*
+
+These features turn the dashboard from a single-browser scratchpad into a shared recruiter workspace, backed by real Django models instead of `localStorage`.
+
+### How it works
+
+1. Recruiters make decisions (Shortlist / Needs review / Rejected) in the existing local **Workflow** board, same as before.
+2. From the new **Team Sync** section, click **"Push my decisions to team board"** to write those decisions to the shared Evalora database.
+3. Anyone else viewing the same Evalora instance sees the same **shared decision board**, can create **Talent Pools** (named, reusable shortlists), and can review the **Activity Log** of every decision, AI Copilot call, ATS run, and export.
+4. The **Analytics** section computes a pipeline funnel, score distribution, top skills/locations, risk-flag frequency, and average component fit directly from the ranked pool and the shared decisions — no manual bookkeeping.
+5. **Export shortlist report** (in the Workflow section, or `/download/shortlist-report/`) downloads a CSV of every recorded decision with candidate name, title, location, score, status, tags, and notes — ready to hand to a hiring manager.
+
+### Data model
+
+| Model | Purpose |
+|---|---|
+| `CandidateDecision` | One row per candidate: status (`shortlisted` / `review` / `rejected`), notes, tags, who updated it, and when |
+| `TalentPool` | A named, reusable list of candidate IDs with a description |
+| `ActivityLog` | An append-only audit trail of decision changes, pool edits, AI Copilot calls, ATS analyses, and exports |
+
+All three ship with a migration (`recruiter/migrations/0001_initial.py`) and are registered in the Django admin (`/admin/`) for direct inspection.
+
+---
+
 ## API Reference
 
 | Route | Method | Description |
@@ -215,6 +255,17 @@ The validator checks headers, row count, rank order, score ordering, candidate u
 | `/api/ai/candidate-action/` | `POST` | AI Copilot recruiter action |
 | `/api/ats/analyze/` | `POST` | ATS resume/CV analysis |
 | `/download/submission/` | `GET` | Download ranked CSV |
+| `/api/decisions/` | `GET` | List all server-persisted recruiter decisions *(new)* |
+| `/api/decisions/save/` | `POST` | Create or update a decision (`candidate_id`, `status`, `notes`, `tags`) *(new)* |
+| `/api/decisions/<candidate_id>/` | `DELETE` | Clear a candidate's server-persisted decision *(new)* |
+| `/api/pools/` | `GET` | List all talent pools *(new)* |
+| `/api/pools/create/` | `POST` | Create a talent pool (`name`, `description`) *(new)* |
+| `/api/pools/<pool_id>/members/` | `POST` | Add/remove candidate IDs from a pool (`add`, `remove`) *(new)* |
+| `/api/pools/<pool_id>/` | `DELETE` | Delete a talent pool *(new)* |
+| `/api/analytics/` | `GET` | Pipeline funnel, score distribution, top skills/locations, risk flags, component averages *(new)* |
+| `/api/activity/` | `GET` | Recent activity log entries *(new)* |
+| `/api/export/shortlist/` | `GET` | Shortlist export as JSON (`?status=` optional filter) *(new)* |
+| `/download/shortlist-report/` | `GET` | Download the shortlist export as a CSV file (`?status=` optional filter) *(new)* |
 
 ---
 
@@ -230,7 +281,7 @@ python manage.py collectstatic
 | `DJANGO_SECRET_KEY` | Strong random secret |
 | `DJANGO_ALLOWED_HOSTS` | Your domain only |
 | API Keys | Store in hosting provider's secret manager |
-| Database | Switch from SQLite to PostgreSQL |
+| Database | Switch from SQLite to PostgreSQL — `CandidateDecision`, `TalentPool`, and `ActivityLog` migrate cleanly to any Django-supported database |
 
 ---
 
@@ -279,6 +330,13 @@ Some PDFs are scanned images without selectable text. Paste extracted resume tex
 <summary><strong><code>npm run validate</code> cannot find candidates</strong></summary>
 
 Ensure the dataset is placed under `data/raw/India_runs_data_and_ai_challenge/`, then rerun `npm run validate`.
+
+</details>
+
+<details>
+<summary><strong>Team Sync / Talent Pools / Analytics show empty or fail to load</strong></summary>
+
+These features read from the database, so make sure you've run `python manage.py migrate` after pulling this update. If you're on a fresh clone, `db.sqlite3` is git-ignored and will be created automatically on first migrate.
 
 </details>
 
