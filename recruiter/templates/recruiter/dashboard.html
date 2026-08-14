@@ -129,6 +129,8 @@
           <a href="#insights">Insights</a>
           <a href="#shortlist">Shortlist</a>
           <a href="#workflow">Workflow</a>
+          <a href="#analytics">Analytics</a>
+          <a href="#team">Team Sync</a>
           <a href="#sandbox">Sandbox</a>
           <a href="#ats">ATS Analyzer</a>
           <a href="#ai-copilot">AI Copilot</a>
@@ -402,7 +404,10 @@
               <p class="eyebrow">Recruiter Workflow</p>
               <h2>Local review board</h2>
             </div>
-            <button class="button secondary compact-button" id="reset-workflow" type="button">Reset decisions</button>
+            <div class="workflow-actions">
+              <a class="button secondary compact-button" id="export-shortlist" href="{% url 'recruiter:download_shortlist_report' %}">Export shortlist report</a>
+              <button class="button secondary compact-button" id="reset-workflow" type="button">Reset decisions</button>
+            </div>
           </div>
           <div class="workflow-grid">
             <article>
@@ -416,6 +421,91 @@
             <article>
               <h3>Rejected</h3>
               <div id="workflow-rejected" class="workflow-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="analytics-section" id="analytics" aria-label="Recruiting analytics">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Analytics</p>
+              <h2>Pipeline & candidate pool insights</h2>
+            </div>
+          </div>
+          <div class="analytics-grid">
+            <article class="panel">
+              <h3>Pipeline funnel</h3>
+              <p class="muted">Server-side decision totals across the full ranked pool.</p>
+              <div class="funnel-board" id="analytics-funnel"></div>
+            </article>
+            <article class="panel">
+              <h3>Score distribution</h3>
+              <p class="muted">How the ranked pool spreads across fit-score bands.</p>
+              <div class="component-bars" id="analytics-score-distribution"></div>
+            </article>
+            <article class="panel">
+              <h3>Top skills in the pool</h3>
+              <p class="muted">Most common evidenced skills among ranked candidates.</p>
+              <div class="chip-cloud" id="analytics-top-skills"></div>
+            </article>
+            <article class="panel">
+              <h3>Risk flags observed</h3>
+              <p class="muted">Signals recruiters should double-check in screening.</p>
+              <div class="chip-cloud" id="analytics-risk-flags"></div>
+            </article>
+            <article class="panel">
+              <h3>Top locations</h3>
+              <div class="mini-list" id="analytics-top-locations"></div>
+            </article>
+            <article class="panel">
+              <h3>Average component fit</h3>
+              <p class="muted">Mean score per ranking component across the pool.</p>
+              <div class="component-bars" id="analytics-component-averages"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="team-section" id="team" aria-label="Team sync, talent pools, and activity log">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Team Sync</p>
+              <h2>Shared decision board, talent pools & activity log</h2>
+            </div>
+            <div class="workflow-actions">
+              <button class="button" id="push-decisions" type="button">Push my decisions to team board</button>
+              <button class="button secondary compact-button" id="refresh-team" type="button">Refresh</button>
+            </div>
+          </div>
+          <p class="muted" id="team-sync-status">Your local decisions stay in this browser until you push them. Pushing writes them to the shared Evalora database so every recruiter viewing this instance sees the same board.</p>
+
+          <div class="team-grid">
+            <article class="panel">
+              <h3>Shared decision board</h3>
+              <div class="table-shell">
+                <table>
+                  <thead>
+                    <tr><th>Candidate</th><th>Status</th><th>Tags</th><th>Notes</th><th>Updated</th></tr>
+                  </thead>
+                  <tbody id="team-decision-table"></tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Talent pools</h3>
+              <p class="muted">Named shortlists you can reuse across roles (e.g. "Final round", "Backup bench").</p>
+              <form id="pool-create-form" class="pool-create-form">
+                <input id="pool-name-input" type="text" placeholder="Pool name" required />
+                <input id="pool-description-input" type="text" placeholder="Description (optional)" />
+                <button class="button secondary compact-button" type="submit">Create pool</button>
+              </form>
+              <div class="mini-list" id="team-pools-list"></div>
+            </article>
+
+            <article class="panel">
+              <h3>Recent activity</h3>
+              <p class="muted">Every decision change, AI Copilot call, ATS analysis, and export is logged here.</p>
+              <ol class="activity-feed" id="team-activity-feed"></ol>
             </article>
           </div>
         </section>
@@ -645,5 +735,6 @@
     </dialog>
 
     <script type="module" src="{% static 'recruiter/js/dashboard.js' %}"></script>
+    <script type="module" src="{% static 'recruiter/js/team.js' %}"></script>
   </body>
 </html>
