@@ -1,12 +1,17 @@
 from __future__ import annotations
 
+import csv
+import io
 import json
 import math
+from collections import Counter
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 from django.conf import settings
+
+from .models import ActivityLog, CandidateDecision, TalentPool
 
 
 BASE_DIR = settings.BASE_DIR
@@ -241,3 +246,212 @@ def build_reasoning(evidence: list[str], components: dict[str, float]) -> str:
     if evidence:
         return f"Strongest evidence: {', '.join(evidence)}. Best component fit: {strength_text}."
     return f"Limited direct role evidence. Best available component fit: {strength_text}."
+
+
+# ---------------------------------------------------------------------------
+# Recruiter decisions (server-persisted shortlist / review / rejected board)
+# ---------------------------------------------------------------------------
+
+def list_decisions() -> list[dict[str, Any]]:
+    return [row.as_dict() for row in CandidateDecision.objects.all()]
+
+
+def upsert_decision(candidate_id: str, status: str, notes: str = "", tags: list[str] | None = None, updated_by: str = "") -> dict[str, Any]:
+    valid_statuses = {choice for choice, _ in CandidateDecision.STATUS_CHOICES}
+    if status not in valid_statuses:
+        raise ValueError(f"status must be one of {sorted(valid_statuses)}")
+
+    tag_value = ",".join(tag.strip() for tag in (tags or []) if tag.strip())
+    row, _ = CandidateDecision.objects.update_or_create(
+        candidate_id=candidate_id,
+        defaults={
+            "status": status,
+            "notes": notes or "",
+            "tags": tag_value,
+            "updated_by": updated_by or "",
+        },
+    )
+    log_activity("decision", candidate_id=candidate_id, detail=f"Marked {status}")
+    return row.as_dict()
+
+
+def delete_decision(candidate_id: str) -> bool:
+    deleted, _ = CandidateDecision.objects.filter(candidate_id=candidate_id).delete()
+    if deleted:
+        log_activity("decision", candidate_id=candidate_id, detail="Cleared decision")
+    return bool(deleted)
+
+
+# ---------------------------------------------------------------------------
+# Talent pools (named, reusable shortlists)
+# ---------------------------------------------------------------------------
+
+def list_pools() -> list[dict[str, Any]]:
+    return [pool.as_dict() for pool in TalentPool.objects.all()]
+
+
+def create_pool(name: str, description: str = "") -> dict[str, Any]:
+    name = (name or "").strip()
+    if not name:
+        raise ValueError("Talent pool name is required.")
+    pool, created = TalentPool.objects.get_or_create(name=name, defaults={"description": description or ""})
+    if not created and description:
+        pool.description = description
+        pool.save(update_fields=["description", "updated_at"])
+    log_activity("pool", detail=f"Created/updated pool '{name}'")
+    return pool.as_dict()
+
+
+def update_pool_candidates(pool_id: int, add: list[str] | None = None, remove: list[str] | None = None) -> dict[str, Any]:
+    try:
+        pool = TalentPool.objects.get(pk=pool_id)
+    except TalentPool.DoesNotExist as exc:
+        raise ValueError(f"Talent pool {pool_id} does not exist.") from exc
+
+    ids = pool.id_list()
+    if add:
+        ids.extend(add)
+    if remove:
+        remove_set = set(remove)
+        ids = [cid for cid in ids if cid not in remove_set]
+    pool.set_id_list(ids)
+    pool.save(update_fields=["candidate_ids", "updated_at"])
+    log_activity("pool", detail=f"Updated membership for '{pool.name}' ({len(pool.id_list())} candidates)")
+    return pool.as_dict()
+
+
+def delete_pool(pool_id: int) -> bool:
+    deleted, _ = TalentPool.objects.filter(pk=pool_id).delete()
+    return bool(deleted)
+
+
+# ---------------------------------------------------------------------------
+# Activity log
+# ---------------------------------------------------------------------------
+
+def log_activity(action: str, candidate_id: str = "", detail: str = "") -> None:
+    valid_actions = {choice for choice, _ in ActivityLog.ACTION_CHOICES}
+    if action not in valid_actions:
+        action = "decision"
+    ActivityLog.objects.create(action=action, candidate_id=candidate_id or "", detail=detail or "")
+
+
+def get_recent_activity(limit: int = 30) -> list[dict[str, Any]]:
+    return [row.as_dict() for row in ActivityLog.objects.all()[:limit]]
+
+
+# ---------------------------------------------------------------------------
+# Analytics: aggregate pipeline, score distribution, and skill/risk breakdowns
+# ---------------------------------------------------------------------------
+
+def build_analytics() -> dict[str, Any]:
+    payload = get_ranking_payload()
+    candidates = payload.get("candidates", [])
+
+    score_buckets = Counter()
+    location_counter = Counter()
+    title_counter = Counter()
+    skill_counter = Counter()
+    risk_counter = Counter()
+    component_totals: dict[str, float] = {}
+    component_counts: dict[str, int] = {}
+
+    for row in candidates:
+        score = float(row.get("score") or 0)
+        bucket = f"{int(score * 10) * 10}-{int(score * 10) * 10 + 10}%"
+        score_buckets[bucket] += 1
+
+        candidate = row.get("candidate") or {}
+        location = str(candidate.get("location") or "Unknown").strip() or "Unknown"
+        location_counter[location] += 1
+
+        title = str(candidate.get("title") or "Unknown").strip() or "Unknown"
+        title_counter[title] += 1
+
+        evidence = row.get("evidence") or {}
+        for skill in evidence.get("skillHighlights") or []:
+            skill_counter[str(skill)] += 1
+        for flag in evidence.get("riskFlags") or []:
+            risk_counter[str(flag)] += 1
+
+        for name, value in (row.get("components") or {}).items():
+            try:
+                component_totals[name] = component_totals.get(name, 0.0) + float(value)
+                component_counts[name] = component_counts.get(name, 0) + 1
+            except (TypeError, ValueError):
+                continue
+
+    component_averages = {
+        name: round(component_totals[name] / component_counts[name], 3)
+        for name in component_totals
+        if component_counts.get(name)
+    }
+
+    decisions = CandidateDecision.objects.all()
+    funnel = Counter(row.status for row in decisions)
+    total_candidates = len(candidates)
+
+    return {
+        "generated_at": payload.get("generated_at"),
+        "total_candidates": total_candidates,
+        "score_distribution": [
+            {"bucket": bucket, "count": count}
+            for bucket, count in sorted(score_buckets.items())
+        ],
+        "top_locations": [
+            {"location": name, "count": count} for name, count in location_counter.most_common(8)
+        ],
+        "top_titles": [
+            {"title": name, "count": count} for name, count in title_counter.most_common(8)
+        ],
+        "top_skills": [
+            {"skill": name, "count": count} for name, count in skill_counter.most_common(10)
+        ],
+        "risk_flags": [
+            {"flag": name, "count": count} for name, count in risk_counter.most_common(8)
+        ],
+        "component_averages": component_averages,
+        "pipeline_funnel": {
+            "new": max(total_candidates - sum(funnel.values()), 0),
+            "shortlisted": funnel.get("shortlisted", 0),
+            "review": funnel.get("review", 0),
+            "rejected": funnel.get("rejected", 0),
+        },
+    }
+
+
+# ---------------------------------------------------------------------------
+# Export: recruiter-ready CSV report of decisions (for hiring-manager handoff)
+# ---------------------------------------------------------------------------
+
+def export_shortlist_csv(status_filter: str | None = None) -> str:
+    payload = get_ranking_payload()
+    by_id = {row.get("candidate_id"): row for row in payload.get("candidates", [])}
+
+    decisions = CandidateDecision.objects.all()
+    if status_filter:
+        decisions = decisions.filter(status=status_filter)
+
+    buffer = io.StringIO()
+    writer = csv.writer(buffer)
+    writer.writerow(["candidate_id", "name", "title", "location", "score", "status", "tags", "notes", "updated_at"])
+
+    for decision in decisions:
+        row = by_id.get(decision.candidate_id, {})
+        candidate = row.get("candidate", {})
+        writer.writerow(
+            [
+                decision.candidate_id,
+                candidate.get("name", ""),
+                candidate.get("title", ""),
+                candidate.get("location", ""),
+                row.get("score", ""),
+                decision.status,
+                ", ".join(decision.tag_list()),
+                decision.notes,
+                decision.updated_at.isoformat(),
+            ]
+        )
+
+    log_activity("export", detail=f"Exported {decisions.count()} decision rows to CSV")
+    return buffer.getvalue()
